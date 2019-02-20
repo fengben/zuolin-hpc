@@ -1,0 +1,1077 @@
+.bm_h .addnew {
+  margin-left: 10px;
+  padding-left: 20px;
+  background: url(http://114.215.106.135/gn/flyi/static/image/common/addbuddy.gif) no-repeat 0 45%;
+}
+
+.bm_h .rss {
+  margin-left: 10px;
+  padding-left: 20px;
+  background: url(http://114.215.106.135/gn/flyi/static/image/common/feed.gif) no-repeat 0 45%;
+}
+
+body {
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/portal_list_view/bg.png) 0 0 repeat !important;
+}
+
+.mn {
+  overflow: visible;
+}
+
+.tedt, #uhd .tb .a a {
+  border: 0 !important;
+}
+
+.bm_c, .bm_h {
+  padding: 0;
+}
+
+.pn {
+  margin-left: 0;
+}
+
+.ct2 .mn {
+  width: 862px;
+  float: left;
+}
+
+.deanmn_left {
+  background: #fff;
+  padding: 15px;
+}
+
+.ct2 .sd {
+  width: 300px;
+  float: right;
+}
+
+.deansideadswz {
+  width: 862px;
+}
+
+.deansideadswz img {
+  width: 862px;
+}
+
+.pg a, .pg strong, .pgb a, .pg label {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 2px;
+  padding: 0 10px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background: #FFFFFF;
+}
+
+.pg strong {
+  background: #1396FF;
+  border-color: #1396FF;
+  color: #FFFFFF;
+}
+
+.pg a.nxt {
+  padding-right: 10px;
+  background: #FFFFFF;
+}
+
+.pg a.nxt:hover {
+  background: #1396FF;
+  color: #FFFFFF;
+}
+
+.pg a.prev {
+  background: #fff url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/forumlist/arrowleft.png) center no-repeat;
+}
+
+.pg a.prev:hover {
+  background: #1396FF url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/forumlist/arrowleft1.png) center no-repeat;
+}
+
+.deanwzpdtitle {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 20px;
+}
+
+.deanwzpdtitle h4 {
+  font-size: 18px;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 5px;
+  color: #333;
+  font-weight: normal;
+  float: left;
+  padding-left: 15px;
+  border-left: 4px solid #1396FF;
+}
+
+.deantools {
+  float: right;
+  margin-top: -2px;
+}
+
+.deantools a {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.deantools a.deanaddnew {
+  margin-right: 5px;
+  width: 70px;
+  background: #1396FF;
+}
+
+.deantools a.deanrssartice {
+  background: #f90;
+  width: 40px;
+}
+
+.deannextnav {
+  margin: 0 0 15px 0;
+}
+
+.deannextnav h4 {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.deannextnav ul {
+  width: 742px;
+  float: right
+}
+
+.deannextnav ul li {}
+
+.deannextnav ul li a {
+  display: block;
+  float: left;
+  height: 26px;
+  border: 2px solid #1396FF;
+  border-radius: 15px;
+  margin: 0 10px 10px 0;
+  padding: 0 10px;
+  color: #1396FF;
+  line-height: 26px;
+}
+
+.deannextnav ul li a:hover {
+  color: #fff;
+  background: #1396FF;
+}
+
+.deanartice ul {}
+
+.deanartice ul li {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-bottom: 1px solid #ededed;
+}
+
+.deanartice ul li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.deanatcertop {
+
+}
+
+.deanatctl {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.deanatctl img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.deanatctr {
+  float: left;
+  margin-left: 15px;
+  width: 520px;
+  height: 50px;
+}
+
+.deanarticername a {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+
+.deanarticername a:hover {
+  color: #1396FF;
+}
+
+.deanarticerinfo {
+  height: 23px;
+  line-height: 23px;
+  float: left;
+  margin-top: 1px;
+}
+
+.deanarticerinfo span {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 23px;
+  display: inline-block;
+  float: left;
+}
+
+.deanarticerinfo em {
+  display: inline-block;
+  float: left;
+  padding: 0 10px;
+  color: #e6e6e6;
+  font-size: 12px;
+}
+
+.deanarticername a.deantaglebs {
+  display: inline-block;
+  color: #1396FF;
+  font-weight: normal;
+  height: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.deanarticername a.deanarttitles {
+  float: left;
+  width: 400px;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.deanarticecomment {
+  width: 56px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: -26px;
+  right: -20px;
+  background: #1396FF;
+}
+
+.deanarticecomment a {
+  float: right;
+  font-size: 14px;
+  color: #fff;
+  padding-right: 5px;
+  font-weight: 700;
+}
+
+.deanartice ul li .deanarticel {
+  float: left;
+  width: 230px;
+  height: 145px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deanartice ul li .deanarticel img {
+  width: 230px;
+  height: 145px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.deanarticerforum {
+  padding-left: 0px !important;
+}
+
+.deanarticerforum a {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #999;
+}
+
+.deanarticerforum a:hover {
+  color: #1396FF;
+}
+
+.deanartice ul li .deanarticel:hover em {
+  left: 287px;
+  transition: .7s;
+  -moz-transition: .7s;
+  -o-transition: .7s;
+  -webkit-transition: .7s;
+}
+
+.deanartice ul li .deanarticer {
+  float: right;
+  width: 585px;
+  position: relative;
+}
+
+.deanartice ul li .deanarticer h5 {
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+}
+
+.deanartice ul li .deanarticer h5 a {
+  font-size: 18px;
+  color: #333;
+}
+
+.deanartice ul li .deanarticer h5 a:hover {
+  color: #1396FF
+}
+
+.deanarticec {}
+
+.deanarticersummary {
+  overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+  color: #999;
+  font-size: 14px;
+
+  line-height: 25px;
+}
+
+.deanarticermiddle {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.deanarticermiddle span {
+  display: inline-block;
+  padding-left: 15px;
+  margin-right: 4px;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/user.png) left center no-repeat;
+}
+
+.deanlistsright {
+  float: right;
+  width: 255px;
+}
+
+.deanattltop {
+  height: 34px;
+  line-height: 34px;
+}
+
+.deanattltop a.deantaglebs {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  background: #1396FF;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 24px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.deanattltop a.deanarttitles {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #333;
+  height: 22px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.deanattltop a.deanarttitles:hover {
+  color: #1396FF;
+}
+
+.deanguanzhu {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.deanguanzhu img {
+  width: 300px;
+}
+
+.deangzbox {
+  padding: 15px;
+}
+
+.deangzewm {
+  width: 100px;
+  height: 100px;
+  padding: 0 10px 0 9px;
+  float: left;
+}
+
+.deangzewm img {
+  width: 100px;
+  height: 100px;
+}
+
+.deangzret {
+  float: right;
+  width: 140px;
+}
+
+.deangzret h3 {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 21px;
+  height: 21px;
+  overflow: hidden;
+  font-weight: normal;
+  color: #333;
+}
+
+.dean_des {
+  position: relative;
+  padding: 12px 18px;
+}
+
+.dean_des i {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.dean_des i.decorate-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #D8D8D8;
+  border-left: 2px solid #D8D8D8;
+}
+
+.dean_des i.decorate-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid #D8D8D8;
+  border-right: 2px solid #D8D8D8;
+}
+
+.dean_des i.decorate-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #D8D8D8;
+  border-left: 2px solid #D8D8D8;
+}
+
+.dean_des i.decorate-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #D8D8D8;
+  border-right: 2px solid #D8D8D8;
+}
+
+.dean_des p {
+  font-size: 14px;
+  color: #999;
+}
+
+.deangzlists {
+  margin-top: 20px;
+}
+
+.deangzlists a {}
+
+.deangzlists a.deansina {
+  float: left;
+  display: block;
+  border-radius: 2px;
+  width: 108px;
+  height: 17px;
+  border: 1px solid #ec4141;
+  padding: 8px 10px;
+}
+
+.deangzlists a.deansina span.deansinaicon {
+  border-right: 1px solid #F6A0A0;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  float: left;
+  width: 18px;
+  height: 15px;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/weibo.png) center no-repeat;
+}
+
+.deangzlists a.deansina span.deansinatxt {
+  font-size: 12px;
+  color: #EC4141;
+}
+
+.deangzlists a.deansina:hover {
+  background: #EC4141;
+}
+
+.deangzlists a.deansina:hover span.deansinaicon {
+  border-right: 1px solid #fff;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/weibo1.png) center no-repeat;
+}
+
+.deangzlists a.deansina:hover span.deansinatxt {
+  color: #fff;
+}
+
+.deangzlists a.deanqqqun {
+  display: block;
+  float: right;
+  border-radius: 2px;
+  width: 108px;
+  height: 17px;
+  border: 1px solid #1396FF;
+  padding: 8px 10px;
+}
+
+.deangzlists a.deanqqqun span.deanqqqunicon {
+  border-right: 1px solid #1396FF;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  float: left;
+  width: 13px;
+  height: 15px;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/qq.png) center no-repeat;
+}
+
+.deangzlists a.deanqqqun span.deanqqquntxt {
+  font-size: 12px;
+  color: #1396FF;
+}
+
+.deangzlists a.deanqqqun:hover {
+  background: #1396FF;
+}
+
+.deangzlists a.deanqqqun:hover span.deanqqqunicon {
+  border-right: 1px solid #fff;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/qq1.png) center no-repeat;
+}
+
+.deangzlists a.deanqqqun:hover span.deanqqquntxt {
+  color: #fff;
+}
+
+.deanpubtitle {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ededed;
+}
+
+.deanpubtitle h4 {
+  font-size: 18px;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 5px;
+  color: #333;
+  font-weight: normal;
+  float: left;
+  padding-left: 15px;
+  border-left: 4px solid #1396FF;
+}
+
+.deanpubtitle .deanpbright {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+
+.deanpubtitle .deanpbright a {
+  font-size: 14px;
+  color: #999;
+  margin-left: 15px;
+}
+
+.deanpubtitle .deanpbright a span {
+  color: #1396FF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.deanpubtitle .deanpbright a:hover {
+  color: #1396FF;
+}
+
+.deansidebox {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+}
+
+.focusBox {
+  position: relative;
+  width: 270px;
+  overflow: hidden;
+}
+
+.focusBox .pic li {}
+
+.deanfocuspic {
+  width: 270px;
+  height: 168px;
+}
+
+.deanfocuspic img {
+  width: 270px;
+  height: 168px;
+}
+
+.deanfocusbox {}
+
+.deanfocusbox h5 {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.deanfocusbox h5 a {
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+
+.deanfocusbox h5 a:hover {
+  color: #1396FF;
+}
+
+.deanfocusbox p {
+  font-size: 12px;
+  color: #999;
+  line-height: 22px;
+}
+
+.deanfocusbox p a {
+  padding-left: 10px;
+  font-size: 12px;
+  color: #1396FF;
+}
+
+.focusBox .hd {
+  overflow: hidden;
+  zoom: 1;
+  position: absolute;
+  width: 273px;
+  bottom: 80px;
+  left: 0;
+  z-index: 3
+}
+
+.focusBox .hd li {
+  float: left;
+  line-height: 15px;
+  text-align: center;
+  width: 66px;
+  height: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-right: 2px;
+  filter: alpha(opacity=80);
+  opacity: .8;
+  -webkit-transition: All .5s ease;
+  -moz-transition: All .5s ease;
+  -o-transition: All .5s ease
+}
+
+.focusBox .hd .on {
+  background: #1396FF;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.focusBox .prev, .focusBox .next {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 36px;
+  height: 28px;
+  color: #FFF;
+  text-align: center;
+  top: 67px;
+  line-height: 28px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.focusBox .prev {
+  left: 0;
+}
+
+.focusBox .next {
+  right: 0;
+}
+
+.focusBox .prev:hover, .focusBox .next:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: .6;
+  opacity: .6
+}
+
+.deangltt {
+  width: 280px;
+}
+
+.deangltt em {
+  display: block;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #fff;
+  float: left;
+  text-align: center;
+  background: #1396FF;
+  position: initial!important;
+}
+
+.deangltt i {
+  display: block;
+  float: left;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin-top: 5px;
+  border-left: 5px solid #1396FF;
+}
+
+.deangltt a {
+  float: left;
+  width: 217px;
+  font-size: 16px;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 5px;
+  color: #333;
+  overflow: hidden;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.deangltt a:hover {
+  color: #1396FF;
+}
+
+.deangllists {
+  margin-top: 10px;
+}
+
+.deangllists ul li {
+  line-height: 31px;
+  height: 31px;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deangllists ul li em {
+  display: block;
+  float: left;
+  height: 30px;
+  width: 21px;
+  position: absolute;
+  left: 0;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/news_icon.jpg) center no-repeat;
+}
+
+.deangllists ul li a {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  float: left;
+  border-left: 1px #eee solid;
+  margin-left: 10px;
+  text-indent: 20px;
+  width: 95%;
+  line-height: 31px;
+  height: 31px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deangllists ul li a:hover {
+  color: #1396FF
+}
+
+.deangllists ul li i {
+  color: #999;
+  display: block;
+  float: right;
+  font-size: 12px;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+.deangllists ul li:hover em {
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/news_icon2.jpg) center no-repeat;
+}
+
+.deanjczxbox {
+  margin-top: 15px;
+}
+
+.deanonvideos {}
+
+.deanonvideos ul {
+  width: 300px;
+}
+
+.deanonvideos ul li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deanonvideos ul li img {
+  width: 130px;
+  height: 80px;
+  opacity: 1;
+}
+
+.deanonvideos ul li a {
+  display: block;
+  width: 130px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deanonvideos ul li a em {
+  display: block;
+  line-height: 16px;
+  width: 90%;
+  padding: 7px 5%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-style: normal;
+}
+
+.deanranklistbox {}
+
+.deanranklistbox ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.deanranklistbox ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.deanoutters {}
+
+.deanoutters em {
+  display: block;
+  width: 25px;
+  height: 25px;
+  float: left;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  font-weight: bold;
+}
+
+.deanoutters em.deanbgcolor1s {
+  color: #1396FF;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/portal_list_view/c1.png) center no-repeat;
+}
+
+.deanoutters a {
+  display: block;
+  float: right;
+  width: 235px;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #333;
+}
+
+.deanoutters a:hover {
+  color: #1396FF
+}
+
+.deaninners {
+  margin-top: 15px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deaninnerspitfd {
+  float: left;
+  width: 114px;
+  height: 80px;
+}
+
+.deaninnerspitfd a {}
+
+.deaninnerspitfd a img {
+  width: 114px;
+  height: 80px;
+}
+
+.deaninerinfosd {
+  float: right;
+  width: 145px;
+}
+
+.deaninerinfosd p {
+  height: 50px;
+  line-height: 25px;
+  color: #999;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.deanrlifd {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.deanrlifd i {
+  padding: 0 5px;
+  color: #999;
+}
+
+.deanranklistbox ul li.on .deaninners {
+  display: block;
+  opacity: 1;
+}
+
+.deanoutters em.deanbgcolor2s {
+  color: #ccc;
+  background: url(http://114.215.106.135/gn/flyi/template/dean_flyi_170116/deancss/portal_list_view/c2.png) center no-repeat;
+}
+
+.deanranklistbox ul li.on .deanoutters a {
+  color: #1396FF
+}
+
+.deanimg_news {
+  width: 277px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.deanimg_news a {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 135px;
+  height: 80px;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+}
+
+.deanimg_news a img {
+  width: 135px;
+  height: 80px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deanimg_news a span {
+  width: 100%;
+  height: 36px;
+  padding: 7px 0;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  line-height: 18px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deanimg_news a span em {
+  display: block;
+  height: 36px;
+  font-style: normal;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.deanimg_news a:hover img {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+.deanimg_news a:hover span {
+  top: 0;
+  padding: 28px 0;
+  background: rgba(255, 255, 255, .8);
+  color: #1396FF;
+}
+
+.deansideads {
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.deansideads img {
+  width: 300px;
+}

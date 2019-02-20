@@ -1,0 +1,6 @@
+  <%:aqlStr = "delete from demo_iss_backup.person where PK=5" %>
+  <%debugMsg(:aqlStr)%>
+  <%=execAerospike(:aqlStr)%> 
+
+
+

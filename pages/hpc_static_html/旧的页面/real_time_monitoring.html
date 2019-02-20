@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>index</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/real_time_monitoring.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/jQueryRotate.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource" onclick="location='job_control.html'">
+							资源调度
+						</div>
+
+						<div class="storage" onclick="location='disk_condition.html'">
+							存储管理
+						</div>
+
+						<div class="settings" onclick="location='system_settings.html'">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<!--左侧栏-->
+				<div class="left">
+					<div class="left-iterm" onclick="location='disk_condition.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-DiskCondition.png" />
+						</div>
+						<div class="left-iterm-font" >
+							<p>磁盘情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='real_time_monitoring.html'" id="real-time-monitoring">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RealTimeMonitoring.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>实时监控</p>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="right">
+					<!--左侧栏的右边-->
+
+					<div class="right-header">
+
+						<div class="right-header-buttom">
+							<div class="right-header-commit right-header-buttom-hover" onclick="location='submit_job_page1.html'" id="">
+								提交作业
+							</div>
+							<div class="right-header-tickets right-header-buttom-hover">
+								Tickets
+							</div>
+							<div class="right-header-customize right-header-buttom-hover">
+								Customize
+							</div>
+						</div>
+
+						<div class="right-header-setting">
+							<div class="right-header-hangon header-setting-iterm" id="right-header-setting">
+								<div class="header-setting-img">
+									<img src="imgs/iron-HangOn.png" />
+								</div>
+								<div class="right-header-font">
+									挂起
+								</div>
+							</div>
+
+							<div class="right-header-run header-setting-iterm" id="right-header-setting">
+								<div class="header-setting-img">
+									<img src="imgs/iron-Run.png" />
+								</div>
+								<div class="right-header-font">
+									运行
+								</div>
+							</div>
+
+							<div class="right-header-delete header-setting-iterm" id="right-header-setting">
+								<div class="header-setting-img">
+									<img src="imgs/iron-Delete.png" />
+								</div>
+								<div class="right-header-font">
+									删除
+								</div>
+							</div>
+
+							<div class="header-setting-iterm right-header-refresh" id="right-header-setting">
+								<div class="header-setting-img">
+									<img src="imgs/iron-Refresh.png" />
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="right-content">
+						<div class="right-content-top">
+							<div class="content-top1">
+								<div class="content-top1-list">
+									<div class="Dashboard">
+										<div class="content-top1-list-tittle">
+											Dashboard
+										</div>
+										<div id="content-top1-list-font">
+											Overview of Latest Month
+										</div>
+									</div>
+									<div class="CurrentMonthEarnings">
+
+										<div class="CurrentMonthEarnings-tittle" id="content-top1-tittle">
+											$3468.96
+										</div>
+										<div id="content-top1-list-font">
+											Current Month Earnings
+										</div>
+
+									</div>
+									<div class="CurrentMonthSales">
+										<div class="CurrentMonthSales-tittle" id="content-top1-tittle">
+											82
+										</div>
+
+										<div id="content-top1-list-font">
+											Current Month Sales
+										</div>
+									</div>
+									<div class="LastMonthSummary">
+										Last Month Summary
+									</div>
+								</div>
+
+								<div class="content-top1-chart">
+									<img src="imgs/Chart-1.png" />
+								</div>
+							</div>
+							<div class="content-top2">
+								<div class="content-top2-database">
+									<div class="database-tittle content-top2-tittle">
+										1.6 TB / 2 TB
+									</div>
+									<div class="database-iron" id="content-top2-iron">
+										<div id="content-top2-iron1">
+											<img src="imgs/icon-database.png" />
+										</div>
+
+										<div id="content-top2-iron2">
+											<img src="imgs/icon-database-load.png" />
+										</div>
+
+									</div>
+								</div>
+
+								<div class="content-top2-tags">
+									<div class="tags-tittle content-top2-tittle">
+										12 Sales per Hour
+									</div>
+									<div class="tags-iron" id="content-top2-iron">
+										<div id="content-top2-iron1">
+											<img src="imgs/ircon-tags.png" />
+										</div>
+
+										<div id="content-top2-iron2">
+											<img src="imgs/iron-tags-load.png" />
+										</div>
+
+									</div>
+								</div>
+
+								<div class="content-top2-users">
+									<div class="users-tittle content-top2-tittle">
+										44,142 / 50,000
+									</div>
+									<div class="users-iron" id="content-top2-iron">
+										<div id="content-top2-iron1">
+											<img src="imgs/ircon-users.png" />
+										</div>
+
+										<div id="content-top2-iron2">
+											<img src="imgs/iron-users-load.png" />
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-bottom">
+							<div class="content-bottom-left">
+								<div class="bottom-tittle">
+									<div class="bottom-tittle-iron">
+										<img src="imgs/iron-Power.png" />
+									</div>
+									<div class="bottom-tittle-font">
+										Online
+									</div>
+								</div>
+								<div class="bottom-left-img">
+									<img src="imgs/Chart-3.png" />
+								</div>
+
+							</div>
+							<div class="content-bottom-right">
+								<div class="bottom-tittle">
+									<div class="bottom-tittle-iron">
+										<img src="imgs/iron-Increasing.png" />
+									</div>
+									<div class="bottom-tittle-font">
+										Traffic
+									</div>
+								</div>
+								<div class="bottom-left-img">
+									<img src="imgs/Chart-4.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

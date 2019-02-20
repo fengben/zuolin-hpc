@@ -1,0 +1,84 @@
+<%If !allArgusValid(:author)%>
+    <%Exit "argument error"%>
+<%EndIf%>
+<!-- st_passports{pass_id,login_name,realname,classification,picture,introduction}{classification='普通教师' and login_name='chengang'}{pass_id desc}{} --> 
+
+<script type='text/javascript'>
+  function refreshBlogList(subtype){
+    var paras= "author=<%=:author%>$^@^$pageNumber=<%=:pageNumber%>$^@^$pageSize=<%=:pageSize%>";
+    var paras1 = paras+'$^@^$type='+subtype+ "' and '1'='1";
+    var pageNumber=1;
+    if(subtype!==$('#subtype')[0].value){
+        paras1= paras1+"$^@^$pageNumber=1";
+        $('#subtype')[0].value=subtype;
+    }
+alert(paras1);
+    loadFromWS("blog/blog.template", paras1, "blogContentList");
+  }
+</script>
+<div style="width:100%;padding: 6px;background-color: #205FD0;border: 1px solid #DFDFDF;font-weight: bold;color:#FFFFFF">
+          <span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>个人信息
+        </div>
+        <div class="abstract">
+          <table style="text-align: center;width: 100%;font-size: 12px;" cellpadding="6" cellspacing="0">
+            <tbody>
+              <tr>
+                <td><a href="blog.html?author=<%=login_name%>&pageNumber=<%=:pageNumber%>&pageSize=5"> <img src="<%=picture%>" height="80px" width="80px"/></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="blog.html?author=<%=login_name%>&pageNumber=<%=:pageNumber%>&pageSize=5">
+                  <span class="glyphicon glyphicon-home" style="margin-right: 4px;"></span><%=realname%>的博客</a></td>
+              </tr>
+              <tr style="text-align: left">
+                <td><label>简介：</label><%=mid(introduction,0,50)%></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width:100%;padding: 6px;background-color: #205FD0;border: 1px solid #DFDFDF;font-weight: bold;color:#FFFFFF;">
+          <span class="glyphicon glyphicon-list" style="margin-right: 5px;"></span> 博客目录
+        </div>
+
+        <div class="abstract">
+
+  <%:sqlstr1="select type from cs_blogs where author='" # :author # "' group by type"%>
+  <%:x=changeRecordSet(:sqlstr1)%>
+  <%:count=recordCount()%>
+  <%If :count>0%>
+   <%:i=0%>
+   <%Repeat%> 
+    <%:typenames[:i]=type%>
+    <%:i=:i+1%>
+   <%EndRepeat%>
+
+    <%:j=0%>
+    <%:count=recordCount()%>
+    <%While :j<:count%>   
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a href="javascript:refreshBlogList('<%=:typenames[:j]%>')"> <%=:typenames[:j]%> </a>
+          <a href="javascript:void(0)" data-toggle="collapse" data-target="#demo<%=:j%>">  <span class="glyphicon glyphicon-chevron-right" style="float: right"></span> </a>
+        </div>
+            
+            <ol id="demo<%=:j%>" class="collapse ol_catalog">
+            <%If :type==:typenames[:j]%>
+                <%:from_n=(:pageNumber-1)*:pageSize%>
+            <%Else%>
+                <%:from_n = 0%>
+            <%EndIf%>
+            <%:sqlstr2="select bid,type,title,author from cs_blogs where type='"#:typenames[:j]#"' and author='"#:author#"' order by create_time desc limit " # :from_n # ","# :pageSize%>
+            <%:x=changeRecordSet(:sqlstr2)%>
+            <%Repeat%>
+              <li>
+                <a href="javascript:showBlogContent('<%=bid%>','<%=author%>');"><%=mid(title,0,20)%></a>
+              </li>
+            <%EndRepeat%>
+            </ol>
+          </div>
+      <%:j=:j+1%> 
+      <br>
+    <%EndWhile%>
+<%EndIf%>
+        </div>

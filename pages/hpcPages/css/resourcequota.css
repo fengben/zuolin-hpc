@@ -1,0 +1,35 @@
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	padding-top: 40px;
+	color: #616366;
+}
+
+.right-header {
+	display: flex;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+
+.right-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+	
+}
+
+.resource-qualts{
+	display: flex;
+	flex-direction: column;
+}
+
+.resource-qualts-box{
+	margin-top: 20px;
+	border: 1px solid lightgray;
+	width: 600px;
+	height: 450px;
+}

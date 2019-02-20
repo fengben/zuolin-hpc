@@ -1,0 +1,3 @@
+<%:str=sshExec(:ip,"root","Wuda_123"," dstat -m -c -d -n 2 2")%>
+<%:resultStr=:str%>
+<%=:resultStr%>

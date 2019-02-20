@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Complex Configuration Add And Modify</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/complexconfiguration_addandmodify.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="addandmodify-tittle">
+						添加或修改配置
+					</div>
+					<div class="addandmodify-content">
+						<div class="addandmodify-content-left">
+							<div class="content-left-name">
+								<div class="name-tettle">
+									Name：
+								</div>
+								<div class="name-textbox">
+									<input type="text" name="name-textbox" id="name-textbox" value="" placeholder="单行输入" />
+								</div>
+							</div>
+							
+							<div class="content-left-shorcut">
+								<div class="shorcut-tettle">
+									Shorcut：
+								</div>
+								<div class="shorcut-textbox">
+									<input type="text" name="shorcut-textbox" id="shorcut-textbox" value="" placeholder="单行输入" />
+								</div>
+							</div>
+							
+							<div class="content-left-default">
+								<div class="default-tettle">
+									Default：
+								</div>
+								<div class="default-textbox">
+									<input type="text" name="default-textbox" id="default-textbox" value="" placeholder="单行输入" />
+								</div>
+							</div>
+							
+							<div class="content-left-urgency">
+								<div class="urgency-tettle">
+									Urgency：
+								</div>
+								<div class="urgency-textbox">
+									<input type="text" name="urgency-textbox" id="urgency-textbox" value="" placeholder="单行输入" />
+								</div>
+							</div>
+						</div>
+						<div class="addandmodify-content-right">
+							<div class="content-right-type">
+								<div class="type-tettle">
+									Type：
+								</div>
+								<div class="type-select">
+									<select name="type-select">
+										<option value="">INT</option>
+										<option value="">STRING</option>
+										<option value="">TIME</option>
+										<option value="">MEMORY</option>
+										<option value="">BOOL</option>
+										<option value="">CSTRING</option>
+										<option value="">HOST</option>
+										<option value="">DOUBLE</option>
+										<option value="">RESTRING</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="content-right-relation">
+								<div class="relation-tettle">
+									Relation：
+								</div>
+								<div class="relation-select">
+									<select name="relation-select">
+										<option value="">==</option>
+										<option value="">>=</option>
+										<option value="">></option>
+										<option value=""><</option>
+										<option value=""><=</option>
+										<option value="">!=</option>
+										<option value="">EXCL</option>
+										
+									</select>
+								</div>
+							</div>
+							
+							<div class="content-right-requestable">
+								<div class="requestable-tettle">
+									Requestable：
+								</div>
+								<div class="requestable-select">
+									<select name="requestable-select">
+										<option value="">NO</option>
+										<option value="">YES</option>
+										<option value="">FORCE</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="content-right-consumable">
+								<div class="consumable-tettle">
+									Consumable：
+								</div>
+								<div class="consumable-select">
+									<select name="consumable-select">
+										<option value="">NO</option>
+										<option value="">YES</option>
+										<option value="">JOB</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

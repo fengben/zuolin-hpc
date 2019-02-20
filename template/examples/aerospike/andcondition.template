@@ -1,0 +1,18 @@
+查询之前先建二级索引：CREATE INDEX city_id_index ON demo_iss_backup.person(city_id) NUMERIC    <br>
+在目前支持的查询中，and后面的条件只有like这一种，将来可以扩充支持数值的大小性比较   <br>
+<%:aqlstr="select age,id,city_id,name,company from demo_iss_backup.person where city_id=2 and name like '1' order by id  desc "%>
+<%execAerospike(:aqlstr)%>  
+<%debugMsg("aqlstr:"#:aqlstr#" ")%>
+<%debugMsg("FOUND_ROWS:"#:FOUND_ROWS#" ")%>
+<table style="width:376px">
+<%Repeat%>
+  <tr style="height:20px">
+    <td>
+      <a title="<%=name%>" href="detail_ug.html?nid=<%=id%>" target="_self"><%=shortTitle(company,0,24)%></a>
+    </td>
+    <td align="right" style="color:#f98510">
+      (<%=age%>)
+    </td>
+  </tr>
+<%EndRepeat%> 
+</table>

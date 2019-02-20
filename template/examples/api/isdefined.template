@@ -1,0 +1,7 @@
+<!-- databaseName=demo_iss_backup -->
+<%:var=1%>
+<%If isDefined(&var1)%>
+defined
+<%Else%>
+not defined
+<%EndIf%>

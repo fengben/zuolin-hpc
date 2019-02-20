@@ -1,0 +1,115 @@
+
+
+
+.right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	color: #616366;
+}
+.addandmodify-tittle{
+	margin-bottom: 40px;
+}
+.addandmodify-content{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.name{
+	display: flex;
+	align-items: center;
+}
+
+.save-iron{
+	width: 18px;
+}
+.user-list-save-iron{
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.user-list-box{
+	
+	width: 200px;
+	height: 150px;
+	margin-top: 10px;
+	border: 1px solid lightgray;
+}
+.user-list-tittleandimg{
+	display: flex;
+}
+
+.start-proc-args,
+.stop-proc-args,
+.slot,
+.allocation-pule,
+.urgency-slots{
+	display: flex;
+	align-items: center;
+}
+
+
+.xuser-list-tittleandimg{
+	display: flex;
+}
+.xuser-list-save-iron{
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+.xuser-list-box{
+	
+	width: 200px;
+	height: 150px;
+	margin-top: 10px;
+	border: 1px solid lightgray;
+}
+
+.bottom{
+	display: flex;
+}
+
+/**/
+.textbox-control{
+	margin-left: 6px;
+}
+
+.left-margin-control{
+	margin: 20px 0 10px 0;
+}
+.addandmodify-content-left{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+.addandmodify-content-right{
+	margin-left: 40px;
+}
+
+.cancel{
+	text-align: center;
+    width: 60px;
+    padding: 2px;
+    margin-right: 80px;
+    border: 1px solid #6286e0;
+    border-radius: 5px;
+    background-color: #6286e0;
+    color: #FFFFFF;
+}
+.submit{
+	text-align: center;
+    width: 60px;
+    padding: 2px;
+    margin-right: 80px;
+    border: 1px solid #6286e0;
+    border-radius: 5px;
+    background-color: #6286e0;
+    color: #FFFFFF;
+}
+
+
+/*取消点击radio的阴影*/
+.left-margin-control input:focus{
+	box-shadow: none;
+}

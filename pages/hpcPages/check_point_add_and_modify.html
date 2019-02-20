@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Check Point Add And Modify</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/check_point_add_and_modify.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource" onclick="location='job_control.html'">
+							资源调度
+						</div>
+
+						<div class="storage" onclick="location='disk_condition.html'">
+							存储管理
+						</div>
+
+						<div class="settings" onclick="location='system_settings.html'">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<div class="left-iterm" onclick="location='job_control.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='queue_control_cluster_queue.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='submit_job_page1.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png"/>
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='complex_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='host_management.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='cluster_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='scheduling_configuration_page1.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='user_manager_manager.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='parallel_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint" onclick="location='check_point.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font" id="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='rule_setting.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='project_setting.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='resource_quota.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='reservation_status.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='information_browsing.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='log_calendar.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="addandmodify-tittle">
+						添加或修改CheckPoint Object
+					</div>
+					<div class="addandmodify-content">
+						<div class="addandmodify-content-left">
+							<div class="name left-margin-control">
+								<div class="name-tittle">
+									Name
+								</div>
+								<div class="name-textbox textbox-control">
+									<input type="text" name="name" id="name" value="" placeholder="单行输入" />
+								</div>
+							</div>
+
+							<div class="interface left-margin-control">
+								<div class="interface-tittle">
+									Interface
+								</div>
+								<div class="interface-select textbox-control">
+									<select name="interface-select">
+										<option value="">Usedef NED</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="checkpoint-command left-margin-control">
+								<div class="checkpoint-command-tittle">
+									CheckPoint Command
+								</div>
+								<div class="checkpoint-command-textbox textbox-control">
+									<input type="text" name="checkpoint-command" id="checkpoint-command" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+							<div class="migration-command left-margin-control">
+								<div class="migration-command-tittle">
+									Migration Command
+								</div>
+								<div class="migration-command-textbox textbox-control">
+									<input type="text" name="migration-command" id="migration-command" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+							<div class="restart-command left-margin-control">
+								<div class="restart-command-tittle">
+									Restart Command
+								</div>
+								<div class="restart-command-textbox textbox-control">
+									<input type="text" name="restart-command" id="restart-command" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+							<div class="clean-command left-margin-control">
+								<div class="clean-command-tittle">
+									Clean Command
+								</div>
+								<div class="clean-command-textbox textbox-control">
+									<input type="text" name="clean-command" id="clean-command" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+						</div>
+						<div class="addandmodify-content-right">
+							<div class="checkpoint-directory left-margin-control">
+								<div class="checkpoint-directory-tittle">
+									CheckPoint Directory
+								</div>
+								<div class="checkpoint-directory-textbox textbox-control">
+									<input type="text" name="checkpoint-directory" id="checkpoint-directory" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+							<div class="checkpoint-when left-margin-control">
+								<div class="checkpoint-when-tittle">
+									CheckPoint When
+								</div>
+								<div class="checkpoint-when-choose">
+									<div class="checkpoint-when-choose1">
+										<input type="radio" name="" id="" value="" />On Shutdown Of Execd
+										<br />
+										<input type="radio" name="" id="" value="" />On Shutdown Of Execd
+									</div>
+									<div class="checkpoint-when-choose2">
+										<input type="radio" name="" id="" value="" />On Shutdown Of Execd
+										<br />
+										<input type="radio" name="" id="" value="" />On Shutdown Of Execd
+									</div>
+								</div>
+							</div>
+
+							<div class="checkpoint-signal left-margin-control">
+								<div class="checkpoint-signal-tittle">
+									CheckPoint Signal
+								</div>
+								<div class="checkpoint-signal-textbox textbox-control">
+									<input type="text" name="checkpoint-signal" id="checkpoint-signal" value="" placeholder="NONE" />
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="bottom left-margin-control">
+						<div class="cancel">
+							cancel
+						</div>
+						<div class="submit">
+							ok
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

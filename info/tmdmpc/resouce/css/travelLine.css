@@ -1,0 +1,167 @@
+.deankcbox {
+  Width: 1180px;
+  margin-top: 20px
+}
+
+.deankcbox dl {
+  width: 1208px;
+}
+
+.deankcbox dl dd {
+  float: left;
+  margin: 0 20px 20px 0;
+  position: relative;
+  width: 280px;
+  background: #fff;
+  height: 220px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .05);
+}
+
+.deankcbox dl dd:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .3)
+}
+
+.deankcfgpic {
+  width: 280px;
+  height: 165px;
+}
+
+.deankcfgpic img {
+  width: 280px;
+  height: 165px;
+}
+
+.deankchiddenbox {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: 280px;
+  height: 220px;
+  background: rgba(255, 255, 255, .9);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deankchiddenbox h5 {
+  height: 42px;
+  line-height: 50px;
+  overflow: hidden;
+  width: 250px;
+  padding: 0 15px;
+}
+
+.deankchiddenbox h5 a {
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+
+.deankchiddenbox h5 a:hover {
+  color: #1396FF
+}
+
+.deankcpridec {
+  font-size: 16px;
+  color: #1396FF;
+  margin: 14px 0;
+  height: 15px;
+  line-height: 15px;
+  margin-left: 15px;
+  background: url(../icon/y.png) left center no-repeat;
+  padding-left: 20px;
+}
+
+.deankchiddenbox p {
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+  padding-left: 15px;
+}
+
+.deanbottomsdkc {
+  padding: 0 15px;
+  height: 55px;
+  line-height: 55px;
+  margin-top: 5px;
+}
+
+.deanbottomsdkcl {
+  float: left;
+}
+
+.deanbottomsdkcl a {
+  display: block;
+  margin-top: 17px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #1396FF;
+  padding: 0 12px;
+  background: #fff;
+  border: 1px solid #1396FF;
+  ;
+  border-radius: 24px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.deanbottomsdkcl a:hover {
+  background: #1396FF;
+  color: #fff;
+}
+
+.deanbottmsdfr {
+  float: right;
+}
+
+.deanbottmsdfr span {
+  display: block;
+  height: 55px;
+  line-height: 55px;
+  font-size: 14px;
+  color: #999;
+  float: left;
+  margin-left: 10px;
+}
+
+.deanbottmsdfr span.deanbozjr {
+  background: url(../icon/mc.png) left center no-repeat;
+  padding-left: 20px;
+}
+
+.deanbottmsdfr span.deanborenshu {
+  background: url(../icon/xx.png) left center no-repeat;
+  padding-left: 20px;
+}
+
+.deankcbox dl dd:hover .deankchiddenbox {
+  top: 0;
+}
+
+#threadlist .bbs, .deanbbsjj, #thread_types {
+  display: none;
+}
+
+.ct2 .travelmn {
+  padding: 0;
+  border: 0;
+  width: 1180px !important;
+  overflow: visible;
+  background: none;
+}

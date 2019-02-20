@@ -1,0 +1,15 @@
+<%#include "examples/functions.template"%>
+<html>
+///<%:aqlstr="select filetuid,filename,relatedDoc from demo_iss_backup.UploadedFiles where relatedDoc=111"%>
+
+///<%execAerospike(:aqlstr)%>
+<table>
+///<%Repeat%>
+<tr><td><%=add(3,5)+6%></td>
+///<td><%=filetuid%></td><td><%=filename%></td><td><%=relatedDoc%></td>
+</tr>
+///<%EndRepeat%>
+</table>
+id=<%=:id%>
+</html>
+

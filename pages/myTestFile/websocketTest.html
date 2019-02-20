@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>mytest</title>
+<script src="/zoolina-ucha/assets/js/jquery-1.11.1.min.js"></script>
+<!--framework-->
+	<script type="text/javascript" src="/zoolina-ucha/Scripts/StationJSLib.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj= new Array();
+			function on(){
+				alert("方法调用成功");
+				
+                            getFromWS("/examples/api/sshexec.template","",obj,loginMainPage);
+			}
+
+			function loginMainPage() {
+				alert("回调函数执行");
+				$('#test').html(obj[0]);
+			}
+		</script>
+		<div id = "test">
+			<button onclick="on()">测试按钮</button>
+		</div>
+	</body>
+</html>
+                        			

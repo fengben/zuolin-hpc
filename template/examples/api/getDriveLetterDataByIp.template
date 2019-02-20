@@ -1,0 +1,3 @@
+///通过ip地址获取可选盘符
+<%:driveLetter=sshExec(:ip,"root","Wuda_123","fdisk -l")%>
+<%=:driveLetter%>

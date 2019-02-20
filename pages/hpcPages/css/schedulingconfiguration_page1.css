@@ -1,0 +1,165 @@
+
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	display: flex;
+	flex-direction: column;
+	color: #616366;
+	font-size: 20px;
+	padding-top: 100px;
+	
+}
+.content-header{
+	display: flex;
+	justify-content: center;
+}
+.general-parameter{
+	color: #FFFFFF;
+	background-color: #6286e0;
+	text-align: center;
+	padding: 6px 40px 6px 40px;
+	border: 1px solid #6286e0;
+	border-radius: 4px;
+	margin-right: 0.5px;
+}
+.load-adjustment{
+	color: #FFFFFF;
+	background-color: #6286e0;
+	text-align: center;
+	padding: 6px 40px 6px 40px;
+	border: 1px solid #6286e0;
+	border-radius: 4px;
+	margin-left: 0.5px;
+}
+.general-parameter-tittle{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.save-iron {
+	width: 18px;
+}
+.general-parameter-content{
+	display: flex;
+	justify-content: center;
+}
+.alogrithm{
+	display: flex;
+	justify-content: flex-start;
+}
+.schedule-interval{
+	display: flex;
+	justify-content: flex-start;
+}
+.schedule-interval-img{
+	margin-left:10px;
+	margin-top: 6px;
+}
+.reprioritize-interval{
+	display: flex;
+	justify-content: flex-start;
+}
+.reprioritize-interval-img{
+	margin-left:10px;
+	margin-top: 6px;
+}
+.default-duration{
+	display: flex;
+	justify-content: flex-start;
+}
+.default-duration-img{
+	margin-left:10px;
+	margin-top: 6px;
+}
+.max-job-user{
+	display: flex;
+	justify-content: flex-start;
+}
+.job-schedule-information{
+	display: flex;
+	flex-direction: column;
+}
+.job-schedule-information-selectandtext{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.job-schedule-information-select{
+	margin-right: 10px;
+}
+
+.load-formula{
+	display: flex;
+	justify-content: flex-start;
+}
+.flush-submit-second{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flush-finish-second{
+	display: flex;
+	justify-content: flex-start;
+}
+.maximum-reservation{
+	display: flex;
+	justify-content: flex-start;
+}
+
+/*对左右两列进行排版*/
+.parameter-content-left{
+	
+	//border: 1px solid red;
+	padding: 12px;
+	margin-right: 30px;
+}
+.parameter-content-right{
+	
+	//border: 1px solid blue;
+	padding: 12px;
+	margin-left: 30px;
+}
+
+.list-margin-control{
+	margin: 20px 0 10px 0;
+}
+
+/*重写select*/
+
+/*select高度宽度*/
+.sort-by-load .sod_select{
+	padding: 6px 6px;
+	width: 120px;
+}
+.job-schedule-information-select .sod_select{
+	padding: 6px 6px;
+	width: 120px;
+}
+/*option高度宽度*/
+.sort-by-load .sod_select .sod_list {
+	width: 120px;
+}
+.job-schedule-information-select .sod_select .sod_list {
+	width: 120px;
+}
+/*select箭头位置*/
+.sort-by-load .sod_select:after {
+	top: 8px;
+}
+
+.sort-by-load .sod_select .sod_list li {
+	
+	padding: 6px 6px 6px 25px;
+	
+}
+
+.job-schedule-information-select .sod_select:after {
+	top: 8px;
+}
+
+.job-schedule-information-select .sod_select .sod_list li {
+	
+	padding: 6px 6px 6px 25px;
+	
+}

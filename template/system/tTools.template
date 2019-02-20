@@ -1,0 +1,28 @@
+<%Function add(:x,:y)%>
+    <%:z=:x+:y%>
+    <%=:z%>
+<%EndFunction%>
+
+<%Function isValidArgu(:x)%>
+    <%:posi=indexOf(:x," ")%>
+    <%If :posi!=-1%>
+        <%Exit ""%>
+    <%EndIf%>
+    <%:posi=indexOf(:x,"and")%>
+    <%If :posi!=-1%>
+        <%Exit ""%>
+    <%EndIf%>
+    <%:posi=indexOf(:x,"AND")%>
+    <%If :posi!=-1%>
+        <%Exit ""%>
+    <%EndIf%>
+    <%:posi=indexOf(:x,"or")%>
+    <%If :posi!=-1%>
+        <%Exit ""%>
+    <%EndIf%>
+    <%:posi=indexOf(:x,"OR")%>
+    <%If :posi!=-1%>
+        <%Exit ""%>
+    <%EndIf%>
+    <%Exit "__true__"%>
+<%EndFunction%>

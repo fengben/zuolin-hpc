@@ -1,0 +1,117 @@
+<!-- databaseName=demo_iss_backup -->
+这个模板文件是一个重要的例子，它演示了如下重要功能：<br>
+（1）不同的用户有不同的权限，有些内容只能被特定的用户看到。<br>
+（2）每一个登录的用户，在服务端会保留这样几条相关的信息：用户名、会话id、usertoken、类别（classification）、最后访问时间，权限是根据类别来确定的。<br>
+（3）模板函数checkLogin()的用法，它返回的是相关用户是否为有效的活动用户。<br>
+（4）模板内置指令Exit的用法，它代表处理过程到此结束。<br>
+
+<%:x=checkLogin(:userId,:userToken)%>
+<%If :x!="ok"%>
+  <%Exit%>
+<%EndIf%>
+<%If :classification=="超级管理员"%>
+<div id="signupbox" style="display:none; align:center">
+<table cellspacing=0 cellpadding=0 border=0 style="margin-left:20px">
+  <tr>
+    <td style="width:80px"> <table><tr><td>&nbsp;用</td><td style="width:2px"></td><td>户</td><td style="width:2px"><td>名：</td></tr></table> </td>
+    <td> <input id="loginName" style="width:100px;height:18px;padding: 0px 0px;margin-bottom: 0px"  onblur="javascript:checkLoginName();" type="text"> </td>
+    <td> &nbsp;<span id="prompt1" style="display:none"> <img src="./imgs/right.jpg" style="width:18px;height:18px">用户名可以使用</span><span id="prompt2" style="display:none"><img src="./imgs/wrong.jpg" style="width:18px;height:18px">用户名已经存在</span></td>
+  </tr>
+  <tr style="height:5px"></tr>
+  <tr>
+    <td style="width:80px"> <table><tr><td>&nbsp;密</td><td style="width:20px"></td><td>码：</td></tr></table></td>
+    <td> <input id="passwd" type="password" style="width:100px;height:18px;padding: 0px 0px;margin-bottom: 0px" ></td>
+    <td></td>
+  </tr>
+  <tr style="height:5px"></tr>
+  <tr>
+    <td style="width:80px"> <label style="margin-left:3px;margin-bottom: 0px;font-size: 12px;line-height:0px">&nbsp;确认密码：</label></td>
+    <td> <input id="passwd1" type="password" style="width:100px;height:18px;padding: 0px 0px;margin-bottom: 0px" ></td>
+    <td></td>
+  </tr>
+  <tr style="height:5px"></tr>
+  <tr>
+    <td style="width:80px"> <table><tr><td>&nbsp;身</td><td style="width:20px"></td><td>份：</td></tr></table> </td>
+    <td> <select id="classification" style="width:105px; height: 20px;  line-height: 0px; font-size:12px;border: 1px solid #CCCCCC; border-radius: 0px 0px 0px 0px; margin-bottom: 0px;padding: 0px 0px;">
+                     <option value="普通教师">普通教师</option>
+                     <option value="中文管理员">中文管理员</option>
+                     <option value="英文管理员">英文管理员</option>
+                     <option value="超级管理员">超级管理员</option>
+                     </select>
+    </td>
+  </tr>
+  <tr style="height:12px"></tr>
+  <tr><td></td><td><input type=button style="width:50px;font-size:12px;font-weight: normal;line-height: 20px;" value="提交" onclick="javascript:sendSignup();"></td></tr>
+</table>
+</div>
+
+
+<script type="text/javascript">
+    //检查用户名是否已经被使用
+    function checkLoginName(){
+        var loginN = $("#popup_message #loginName").val();
+        if(loginN=="")
+            return;
+      var dealResult=function(){
+          var loginN;
+          if(obj[0].length>9)
+              loginN = obj[0].substring(0,9);
+          else
+              loginN = obj[0];
+          if(loginN=="No record"){
+              $("#popup_message #prompt1")[0].style.display = "";
+              $("#popup_message #prompt2")[0].style.display = "none";
+          }
+          else{
+              $("#popup_message #prompt1")[0].style.display = "none";
+              $("#popup_message #prompt2")[0].style.display = "";
+          }
+      };
+      var obj = new Array();
+      getFromWS("dynamicPage()","folder=examples$^@^$template=checkLoginName.template$^@^$loginName="+loginN,obj,dealResult); 
+  }
+
+    function sendSignup(){
+        var loginName=$("#popup_message #loginName").val();
+        if(loginName==""){
+            alert("用户名不能为空！")
+            return;
+        }
+        if($("#popup_message #prompt1")[0].style.display == 'none'){
+            alert("请输入未被使用的用户名！")
+            return;
+        }
+        var passwd = $("#popup_message #passwd").val();
+        var passwd1 = $("#popup_message #passwd1").val();
+        if(passwd==""){
+            alert("密码不能为空！")
+            return;
+        }
+        if(passwd != passwd1){
+            alert("两次密码不一致，请重新输入密码！")
+            return;
+        }
+        var dealResult=function(){
+            if(obj[0]=="ok"){
+                alert("新用户注册成功！");
+                hiClose();
+            }
+        };
+        var obj = new Array();
+        var classification = $("#popup_message #classification").val();
+        getFromWS("dynamicPage()","folder=examples$^@^$template=addPassport.template$^@^$loginName="+loginName+"$^@^$passwd="+passwd+"$^@^$classification="+classification,obj,dealResult); 
+  }
+
+    function dosignup(){
+        hiBox('#signupbox', '注册',300,'','','.a_close');
+    }
+</script>
+
+
+
+<input type="button" value="注册" onclick="javascript:dosignup();">
+<%EndIf%>
+
+<%If :classification=="超级管理员" || :classification=="中文管理员"%>
+<input type='button' value='维护操作'>
+<%EndIf%>

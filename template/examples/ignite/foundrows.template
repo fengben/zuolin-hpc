@@ -1,0 +1,11 @@
+  <%:sqlstr1="select person.id as person_id,city.name as city_name, person.name as person_name, FOUND_ROWS from person,city where city_id=? and city_id=city.id limit 1,3"%>
+  <%:x=changeRecordSet(:sqlstr1,4L,4L)%>
+  <%:count=recordCount()%>
+  <%debugMsg("recordCount is "+:count)%>
+  FOUND_ROWS is <%=FOUND_ROWS%><br>
+  <%If :count>0%>
+   <%Repeat%> 
+        <%=person_id%>&nbsp;<%=city_name%>&nbsp;<%=person_name%><br>
+    <%EndRepeat%>
+  <%EndIf%>
+

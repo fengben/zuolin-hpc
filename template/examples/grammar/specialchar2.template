@@ -1,0 +1,8 @@
+<html>
+  <div id="a"></div>
+  <%:a="abc\\\"%\z>"%>
+  <script>
+    var entity = document.getElementById("a");
+    entity.innerText= "<%=:a%>";
+  </script>
+</html>

@@ -1,0 +1,128 @@
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	padding-top: 40px;
+}
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	//border: 1px solid green;
+	color: #eef3f5;
+}
+
+.commit {
+	text-align: center;
+	width: 80px;
+	padding: 10px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+.delete{
+	text-align: center;
+	width: 80px;
+	padding: 10px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+.refresh {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.customize {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+	//border: 1px solid red;
+}
+.right-content-outer{
+	margin-bottom: 40px;
+}
+.content-table {
+	display: flex;
+	justify-content: center;
+}
+
+
+.jobcontrol-table {
+	color: #616366;
+}
+
+.availiable-ars{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 10px 0;
+}
+table {
+	border-collapse: collapse;
+}
+
+.content-table {
+	display: flex;
+}
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+.table-checkbox-list {
+	margin-left: 20px;
+	margin-top: 86px;
+}
+
+.table-checkbox {
+	padding-bottom: 9px;
+	padding-top:10px;
+}
+
+.table-checkbox input {
+	position: absolute;
+	left: -999999px;
+}
+
+.mark::before {
+	content: '\a0';
+	display: inline-block;
+	border: 1px solid #616366;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.table-checkbox input[type="checkbox"]:checked+.mark::before {
+	content: '\2713';
+	color: #6286e0;
+}

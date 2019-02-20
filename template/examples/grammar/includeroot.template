@@ -1,0 +1,5 @@
+<html>
+在zoolina script中，可以包含模板根目录下的文件，有以下两种方式:<br>
+<%#include "rootdir.template"%>
+<%#include "/rootdir.template"%>
+</html>

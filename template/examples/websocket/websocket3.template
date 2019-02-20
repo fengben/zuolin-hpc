@@ -1,0 +1,5 @@
+<%debugMsg(:service_type,"show_name")%>
+<%If :service_type=="unique"%>
+    <%:num += 1%>
+<%EndIf%>
+<%=:num%>

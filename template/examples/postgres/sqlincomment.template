@@ -1,0 +1,7 @@
+<!-- databaseName=demo_iss_backup -->
+<%:city_id=4%>
+<%:name="micke"%>
+<%:age=18%>
+<%:company="international manufacturer"%>
+<!-- SQL={insert into person(city_id,name,age,company) values(<%=:city_id%>,'<%=:name%>',<%=:age%>,'<%=:company%>');}-->
+ok

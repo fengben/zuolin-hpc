@@ -1,0 +1,8 @@
+在zoolina script中，可以自定义函数，并包含进另外一个文件使用<br>
+<%#include "examples/grammar/functions.template"%>
+<html>
+<table>
+<tr><td><%=add(3,5)+6%></td>
+</tr>
+</table>
+</html>

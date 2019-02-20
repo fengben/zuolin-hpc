@@ -1,0 +1,2 @@
+<%:diskStorageInfo=sshExec("192.168.10.235","root","Wuda_123","lfs df -h"）%>
+<%=:diskStorageInfo%>

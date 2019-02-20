@@ -1,0 +1,6 @@
+<%debugMsg("--------"+:user_message+"-------------")%>
+<%If :user_message=="terminate"%>
+    <%Exit "terminate websocket"%>
+<%EndIf%>
+<%:num += 1%>
+<%=:num%>

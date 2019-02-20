@@ -1,0 +1,35 @@
+
+
+.right {
+
+	color: #616366;
+}
+
+.right-header {
+	display: flex;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+
+.right-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 20px 40px 20px 40px;
+	background-color: #FFFFFF;
+	
+	
+}
+
+.resource-qualts{
+	display: flex;
+	flex-direction: column;
+}
+
+.resource-qualts-box{
+	width: 600px;
+	height: 450px;
+	margin-top: 20px;
+	border: 1px solid lightgray;
+}

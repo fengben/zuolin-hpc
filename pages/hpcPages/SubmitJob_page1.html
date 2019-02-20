@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SubmitJob_page1</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/submitjob_page1.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+
+					<div class="right-header">
+
+						<div class="right-header-buttom">
+							<div class="right-header-post">
+								提交
+							</div>
+						</div>
+
+						<div class="right-header-setting">
+							<div class="right-header-clean">
+								<div class="right-header-font">
+									清空
+								</div>
+							</div>
+
+							<div class="right-header-reload">
+								<div class="right-header-font">
+									Reload
+								</div>
+							</div>
+
+							<div class="right-header-settings">
+								<div class="right-header-font">
+									setting
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right-content">
+						<div class="right-content-outer">
+							<div class="post-category">
+								<div class="post-category-tittle">
+									类型选择：
+								</div>
+
+								<div class="category-jobscript">
+									jobScript
+								</div>
+
+								<div class="category-bacth">
+									Bacth
+								</div>
+							</div>
+
+							<div class="normal-setting">
+								<div class="normal-setting-container">
+									<div class="normal-setting-tittle">普通设置</div>
+									<div class="normal-setting-item">
+										<div class="normal-setting-left">
+											<div class="normal-setting-prefix left-margin-control">
+												<div class="prefix-tittle">
+													prefix:
+													<span class="prefix-textbox">
+														<input type="text" name="prefix" id="prefix" value="" placeholder="#$"/>
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-javascript left-margin-control">
+												<div class="javascript-tittle">
+													javaScript:
+													<div class="javascript-textbox">
+														<input type="text" name="javascript" id="javascript" value="" placeholder="单行输入" />
+
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+											</div>
+
+											<div class="normal-setting-jobtask left-margin-control">
+												<div class="jobtask-tittle">
+													job Task:
+													<span class="jobtask-textbox">
+														<input type="text" name="jobtask" id="jobtask" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-jobname left-margin-control">
+												<div class="jobname-tittle">
+													Job Name:
+													<span class="jobname-textbox">
+														<input type="text" name="jobname" id="jobname" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-jobargs left-margin-control">
+												<div class="jobargs-tittle">
+													Job args:
+													<span class="jobargs-textbox">
+														<input type="text" name="jobargs" id="jobargs" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-priority left-margin-control">
+												<div class="priority-tittle">
+													Priority:
+													<span class="priority-textbox">
+														<input type="text" name="priority" id="priority" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-jobshare left-margin-control">
+												<div class="jobshare-tittle">
+													Job Share:
+													<span class="jobshare-textbox">
+														<input type="text" name="jobshare" id="jobshare" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-maxtasks left-margin-control">
+												<div class="maxtasks-tittle">
+													Max Tasks:
+													<span class="maxtasks-textbox">
+														<input type="text" name="maxtasks" id="maxtasks" value="" />
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-startat left-margin-control">
+												<div class="startat-tittle">
+													start At:
+													<div class="startat-textbox">
+														<input type="text" name="startat" id="startat" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+											</div>
+
+											<div class="normal-setting-project left-margin-control">
+												<div class="project-tittle">
+													project:
+													<div class="project-textbox">
+														<input type="text" name="project" id="project" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+											</div>
+
+											<div class="normal-setting-currentworkingdirectory left-margin-control">
+												<div class="left-margin-control">
+													<input type="radio" name="currentworkingdirectory" id="currentworkingdirectory" value="" /> Crrent Working Directory
+												</div>
+												<div class="workingdirectory-tittle left-margin-control">
+													working Directory:
+													<span class="workingdirectory-textbox">
+														<input type="text" name="workingdirectory" id="workingdirectory" value="" placeholder="单行输入"/>
+													</span>
+												</div>
+												<div class="shell-tittle left-margin-control">
+													shell:
+													<div class="shell-textbox">
+														<input type="text" name="shell" id="shell" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="normal-setting-right">
+											<div class="normal-setting-mergeoutput right-margin-control">
+												<div class=" right-margin-control">
+													<input type="radio" name="" id="" value="" /> Merge Output
+												</div>
+												<div class="stdout-tittle right-margin-control">
+													stdout:
+													<div class="stdout-textbox">
+														<input type="text" name="stdout" id="stdout" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+												<div class="stderr-tittle right-margin-control">
+													stderr:
+													<div class="stderr-textbox">
+														<input type="text" name="stderr" id="stderr" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+												<div class="stdin-tittle">
+													stdin:
+													<div class="stdin-textbox">
+														<input type="text" name="stdin" id="stdin" value="" placeholder="单行输入" />
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png" class="normal-setting-save-iron" />
+													</div>
+												</div>
+											</div>
+
+											<div class="normal-setting-requestresource">
+												<div class="requestresource-tittle">
+													Request Resource:
+													<span class="requestresource-textbox">
+														<a href="javascript:;" class="file-upload">文件选择
+															<input class="file-style-change" type="file" multiple="multiple" />
+														</a>
+													</span>
+												</div>
+											</div>
+
+											<div class="normal-setting-restartornot right-margin-control">
+												<select name="restartornot">
+													<option value="Restart depends">Restart depends</option>
+													<option value="No Restart">No Restart</option>
+												</select>
+											</div>
+
+											<div class="normal-setting-notifyjob">
+												<input type="radio" name="notifyjob" id="notifyjob" value="" /> Notify Job
+											</div>
+
+											<div class="normal-setting-holdjob">
+												<input type="radio" name="holdjob" id="holdjob" value="" /> Hold Job
+												<span class="">
+													<input type="text" name="holdjob-yext" id="holdjob-yext" value="" placeholder="UNDEFNED"/>
+												</span>
+											</div>
+
+											<div class="normal-setting-startjobimediately">
+												<input type="radio" name="startjobimediately" id="startjobimediately" value="" /> start job imediately
+											</div>
+
+											<div class="normal-setting-jobperservation">
+												<input type="radio" name="jobperservation" id="jobperservation" value="" /> Notify Job
+											</div>
+
+											<div class="advancesettings">
+												Advance settings >>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

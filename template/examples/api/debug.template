@@ -1,0 +1,7 @@
+<%:i=1%>
+<%=:i%><br>
+<%debugMsg("this is ordinary debug information")%>
+<%debugMsg("this is debug information with template name","show_name")%>
+<%debugMsg("information with template name and executing order","show_name","the third debug")%>
+<%debugMsg("another information with template name and executing order","show_name","the fourth debug")%>
+<%log("this is a piece of information")%>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>User Management-Userset</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/UserManager_Userset.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+					<div class="right-header">
+						<div class="right-header-buttom">
+							<div class="right-header-shutdown">
+								关机
+							</div>
+							<div class="right-header-add right-header-buttom-style">
+								添加
+							</div>
+							<div class="right-header-modify right-header-buttom-style">
+								修改
+							</div>
+							<div class="right-header-delete right-header-buttom-style">
+								删除
+							</div>
+						</div>
+					</div>
+
+					<div class="right-content">
+						<div class="host-selection">
+							<div class="manager host-style">
+								Manager
+							</div>
+							<div class="operator host-style">
+								Operator
+							</div>
+							<div class="userset host-style">
+								Userset
+							</div>
+							<div class="user host-style">
+								User
+							</div>
+						</div>
+
+						<div class="host">
+							<div class="host-textbox">
+								<input type="text" name="host-textbox" id="host-textbox" value="" placeholder="单行输入" />
+							</div>
+						</div>
+
+						<div class="display-userset">
+							<div class="display-userset-tittle">
+								显示Userset：
+							</div>
+							<div class="display-userset-textarea">
+								<div class="display-userset-textarea-box">
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

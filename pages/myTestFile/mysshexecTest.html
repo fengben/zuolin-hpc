@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>mytest</title>
+    <!--framework-->
+    <!--<script type="text/javascript" src="/zoolina-ucha/Scripts/StationJSLib.js"></script>-->
+    <script type="text/javascript" src="/Scripts/StationJSLib.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+    var obj = new Array();
+    $(function () {
+        getFromWS("/zoolinatest/1test.template", "", obj, generateSystemSettingFile);
+        console.log('done')
+    });
+
+    function generateSystemSettingFile() {
+        console.log("执行结束");
+    }
+
+</script>
+<div id="test">
+    <!--<button onclick="on()">测试按钮</button>-->
+</div>
+<div id="test1">
+
+</div>
+<div id="test2">
+    <!--<button onclick="strEdit()">字符串切割</button>-->
+</div>
+</body>
+</html>
+                        			

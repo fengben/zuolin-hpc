@@ -1,0 +1,28 @@
+<%
+debugMsg("***********"#:opt)
+/// opt 对应四个分类
+/// 管理主机
+If :opt ==0
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -sh")
+    debugMsg("======opt=0"#:sub_host)
+EndIf
+/// 提交主机
+If :opt ==1
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -ss")
+    debugMsg("======opt=1"#:sub_host)
+
+EndIf
+
+/// 主机集群
+If :opt ==2
+    debugMsg("======opt=2")
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -shgrp_tree @allhosts")
+    debugMsg("======opt=2"#:sub_host)
+EndIf
+
+/// 执行主机
+If :opt == 3
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -sel")
+EndIf
+Exit:sub_host
+%>

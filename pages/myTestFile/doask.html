@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>mytest</title>
+<script src="/zoolina-ucha/assets/js/jquery-1.11.1.min.js"></script>
+<!--framework-->
+	<script type="text/javascript" src="/zoolina-ucha/Scripts/StationJSLib.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj= new Array();
+			function on(){
+                            getFromWS("/examples/api/sshexec.template","",obj,loginMainPage);
+			}
+
+			function loginMainPage() {
+				console.log(obj[0]);
+			}
+			$(function(){
+				//用于每间隔一秒向服务器询问一次情况，并得到相应的返回值，进行下一步的处理
+				var inter = setInterval(on,1000);
+				$("#test").click(function(){
+					clearInterval(inter);
+				});
+			})
+		</script>
+		<div>
+			<button id = "test">停止测试</button>
+		</div>
+	</body>
+</html>
+                        			

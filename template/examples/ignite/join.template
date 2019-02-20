@@ -1,0 +1,9 @@
+  <%:sqlstr1="select person.id as person_id,city.name as city_name, person.name as person_name from person,city where city_id=? and city_id=city.id"%>
+  <%:x=changeRecordSet(:sqlstr1,2L)%>
+  <%:count=recordCount()%>
+  <%debugMsg("recordCount is "+:count)%>
+  <%If :count>0%>
+   <%Repeat%> 
+        <%=person_id%>&nbsp;<%=city_name%>&nbsp;<%=person_name%><br>
+    <%EndRepeat%>
+  <%EndIf%>

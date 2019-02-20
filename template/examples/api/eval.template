@@ -1,0 +1,9 @@
+<!-- databaseName=demo_iss_backup -->
+此例演示了eval函数的用法<br>
+
+
+<%:x=":i=5"%>
+<%:x=eval(:x)%>
+执行eval()函数后:x=<%=:x%><br>
+执行eval()函数后:i=<%=:i%><br>
+直接通过eval()求变量:i的值:i=<%=eval(":i")%><br>

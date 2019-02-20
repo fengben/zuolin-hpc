@@ -1,0 +1,12 @@
+<%
+debugMsg("********In hostManagement/hostGroup.template********"#:opt)
+/// 显示主机集群
+If :opt==0
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -shgrpl")
+EndIf
+/// 显示主机
+If :opt==1
+    :sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -shgrp_tree "#:host_group)
+EndIf
+Exit:sub_host
+%>

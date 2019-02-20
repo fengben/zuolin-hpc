@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串解析测试</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--framework-->
+    <script type="text/javascript" src="/zoolina-ucha/Scripts/StationJSLib.js"></script>
+</head>
+<body>
+<div id="show"></div>
+
+</body>
+<script type="application/javascript">
+    var obj = new Array();
+    $(function() {
+      getFromWS("/examples/api/mytest.template","",obj,stringParsing);
+    });
+    var stringParsing = function() {
+      var rawString = obj[0];
+      $("#show").append(
+        obj
+      );
+      console.log("rawString= "+rawString);
+      rawString.match(/whufs-MDT(.{1,100})\n/g).forEach(function(val,index) {
+        console.log("MDT= "+val);
+      });
+      rawString.match(/whufs-OST(.{1,100})\n/g).forEach(function(val,index) {
+        console.log("OST= "+val);
+      });
+    }
+
+
+</script>
+</html>

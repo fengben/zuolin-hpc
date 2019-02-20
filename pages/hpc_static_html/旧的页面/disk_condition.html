@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>disk_condition</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/disk_condition.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource" onclick="location='job_control.html'">
+							资源调度
+						</div>
+
+						<div class="storage" onclick="location='disk_condition.html'">
+							存储管理
+						</div>
+
+						<div class="settings" onclick="location='system_settings.html'">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<!--左侧栏-->
+				<div class="left">
+					<div class="left-iterm" onclick="location='disk_condition.html'" id="disk-condition">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-DiskCondition.png" />
+						</div>
+						<div class="left-iterm-font" >
+							<p>磁盘情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='real_time_monitoring.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RealTimeMonitoring.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>实时监控</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="right">
+					<!--左侧栏的右边-->
+					<div class="mdt-form">
+						<table>
+							<tr>
+								<td style="width: 180px;">MDT</td>
+								<td style="background-color: #aef4a4;">已使用</td>
+								<td style="background-color: #aef4a4;">总量</td>
+								<td>读取KB</td>
+								<td>写入KB</td>
+								<td>CPU%</td>
+								<td>内存%</td>
+								<td>工作状态</td>
+							</tr>
+							<tr>
+								<td>whufs-MDT0000</td>
+								<td>0.3M</td>
+								<td>512M</td>
+								<td>10441</td>
+								<td>0</td>
+								<td>0.15</td>
+								<td>10</td>
+								<td><div class="dmt-status-dot status-dot-health"></div></td>
+								<td style="border: none;" onclick="location='mdt_switch_settings.html'"><div class="from-change form-mdt-change">切换</div></td>
+							</tr>
+							<tr>
+								<td>whufs-MDT0002</td>
+								<td>0</td>
+								<td>512M</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td><div class="dmt-status-dot status-gray"></div></td>
+								<td style="border: none;" onclick="location='mdt_switch_settings.html'"><div class="from-change form-mdt-change">切换</div></td>
+							</tr>
+						</table>
+						
+						
+					</div>
+
+					<div class="ost-form">
+						<table>
+							<tr>
+								<td style="width: 180px;">OST</td>
+								<td style="width: 180px;">来源</td>
+								<td style="background-color: #aef4a4;">已使用</td>
+								<td style="background-color: #aef4a4;">总量</td>
+								<td>读取KB</td>
+								<td>写入KB</td>
+								<td>CPU%</td>
+								<td>内存%</td>
+								<td>接收</td>
+								<td>发送</td>
+								<td>磁盘健康状态</td>
+								<td>工作状态</td>
+							</tr>
+							<tr>
+								<td>whufs-OST0000</td>
+								<td>192.168.10.216@tcp</td>
+								<td>2.3M</td>
+								<td>9.2G</td>
+								<td>10441</td>
+								<td>0</td>
+								<td>0.15</td>
+								<td>10</td>
+								<td></td>
+								<td></td>
+								<td><div class="ost-status-dot status-dot-health"></div></td>
+								<td><div class="dmt-status-dot status-dot-health"></div></td>
+
+								<td style="border: none;" onclick="location='ost_switch_settings.html'"><div class="from-change form-ost-health-change">切换</div></td>
+							</tr>
+							<tr>
+								<td>whufs-OST0001</td>
+								<td>192.168.10.217@tcp</td>
+								<td>2.3M</td>
+								<td>9.2G</td>
+								<td>1145</td>
+								<td>0</td>
+								<td>0.2</td>
+								<td>12</td>
+								<td></td>
+								<td></td>
+								<td><div class="ost-status-dot ost-status-dot-bad"></div></td>
+								<td><div class="dmt-status-dot status-gray"></div></td>
+
+								<td style="border: none;" onclick="location='ost_switch_settings.html'"><div class="from-change form-ost-health-change">切换</div></td>
+
+							</tr>
+							<tr>
+								<td>whufs-OST0002</td>
+								<td>192.168.10.218@tcp</td>
+								<td>2.3M</td>
+								<td>9.2G</td>
+								<td>1145</td>
+								<td>0</td>
+								<td>0.2</td>
+								<td>12</td>
+								<td></td>
+								<td></td>
+								<td><div class="ost-status-dot ost-status-dot-bad"></div></td>
+								<td><div class="dmt-status-dot status-gray"></div></td>
+
+								<td style="border: none;" onclick="location='ost_switch_settings.html'"><div class="from-change form-ost-health-change">切换</div></td>
+
+							</tr>
+							<tr>
+								<td>whufs-OST0003</td>
+								<td>192.168.10.219@tcp</td>
+								<td>2.3M</td>
+								<td>9.2G</td>
+								<td>10441</td>
+								<td>0</td>
+								<td>0.15</td>
+								<td>10</td>
+								<td></td>
+								<td></td>
+								<td><div class="ost-status-dot status-dot-health"></div></td>
+								<td><div class="dmt-status-dot status-dot-health"></div></td>
+
+								<td style="border: none;" onclick="location='ost_switch_settings.html'"><div class="from-change form-ost-health-change">切换</div></td>
+
+							</tr>
+						</table>
+					</div>
+					
+					<div class="command-prompt">
+						<div class="command-1-outer">
+							<div class="command-1-box">
+								<div class="command-1">
+									MDT#：lctl get_param lov.*-mdtlov.target_obd
+								</div>
+								<div class="command-1">
+									cli#：lctl get_param osc.*.ost_conn_uuid
+								</div>
+							</div>
+							<div class="command-1-tittle">
+								这两个只读配置，不管MDT是否故障
+							</div>
+						</div>
+						<div class="command-2-outer">
+							<div class="command-2">
+								cli#：lfs df -h
+							</div>
+							<div class="command-2-tittle">
+								有一个出问题全部获取不到数据
+							</div>
+						</div>
+						<div class="command-3-outer">
+							collectl
+						</div>
+						<div class="command-4-outer">
+							oss#：top
+						</div>
+						<div class="command-5-outer">
+							lctl get_param obdfilter.*.degraded
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

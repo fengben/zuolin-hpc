@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JobControl</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/jobcontrol.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+
+					<div class="right-header">
+
+						<div class="right-header-buttom">
+							<div class="right-header-commit">
+								提交作业
+							</div>
+							<div class="right-header-tickets">
+								Tickets
+							</div>
+							<div class="right-header-customize">
+								Customize
+							</div>
+						</div>
+
+						<div class="right-header-setting">
+							<div class="right-header-hangon" id="right-header-setting">
+								<div class="hangon-img">
+									<img src="imgs/iron-HangOn.png" />
+								</div>
+								<div class="right-header-font">
+									挂起
+								</div>
+							</div>
+
+							<div class="right-header-run" id="right-header-setting">
+								<div class="run-img">
+									<img src="imgs/iron-Run.png" />
+								</div>
+								<div class="right-header-font">
+									运行
+								</div>
+							</div>
+
+							<div class="right-header-delete" id="right-header-setting">
+								<div class="delete-img">
+									<img src="imgs/iron-Delete.png" />
+								</div>
+								<div class="right-header-font">
+									删除
+								</div>
+							</div>
+
+							<div class="right-header-refresh" id="right-header-setting">
+								<div class="hangon-img">
+									<img src="imgs/iron-Refresh.png" />
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="right-content">
+						<div class="right-content-outer">
+							<div class="job-status">
+								<div class="status-waiting">
+									等待中
+								</div>
+								<div class="status-running">
+									正在运行
+								</div>
+								<div class="status-completed">
+									已经完成
+								</div>
+							</div>
+							<div class="content-table">
+								<div class="jobcontrol-table">
+									<table>
+										<tr>
+											<td>JobId</td>
+											<td>Priority</td>
+											<td>JobName</td>
+											<td>Owner</td>
+											<td>Status</td>
+											<td>Queue</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+
+								<div class="table-checkbox-list">
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox1">
+										<label class="mark" for="checkbox1"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox2">
+										<label class="mark" for="checkbox2"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox3">
+										<label class="mark" for="checkbox3"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox4">
+										<label class="mark" for="checkbox4"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox5">
+										<label class="mark" for="checkbox5"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox6">
+										<label class="mark" for="checkbox6"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox7">
+										<label class="mark" for="checkbox7"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox8">
+										<label class="mark" for="checkbox8"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox9">
+										<label class="mark" for="checkbox9"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox10">
+										<label class="mark" for="checkbox10"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox11">
+										<label class="mark" for="checkbox11"></label>
+									</div>
+									
+									<div class="table-checkbox">
+										<input type="checkbox" id="checkbox12">
+										<label class="mark" for="checkbox12"></label>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,10 @@
+<%:sql1 = merge("insert into Person(city_id,name,age,company) values(?,?,?,?)", 4,'何斌大',98,'木材加工厂')%>
+<%:sql2 = merge("insert into City(name) values(?)",'南京')%>
+<%:sql3 = merge("select name from City where id > ?",-1)%>
+<%:r=execTransaction(:sql1,:sql2,:sql3)%>
+<%Repeat%>
+    <%=name%><br>
+<%EndRepeat%>
+<%:sql1 = merge("delete from Person where name=?",'何斌大')%>
+<%:sql2 = merge("delete from City where name=?",'南京')%>
+<%=execTransaction(:sql1,:sql2)%>

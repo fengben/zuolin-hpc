@@ -1,0 +1,141 @@
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	padding-top: 40px;
+	color: #616366;
+	font-size: 14px;
+}
+
+.right-header {
+	display: flex;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 200px;
+	
+}
+
+.tittle-control{
+	margin:20px 0 10px 0;
+	font-size: 16px;
+	color: rgba(63, 81, 181, 1);
+}
+.marign-control{
+	margin: 0 40px 0 0;
+}
+.input-text-position-control{
+	margin-left: 10px;
+}
+
+.policy-importance-factor{
+	display: flex;
+	flex-direction: column;
+}
+
+.policy-importance-factor-content{
+	display: flex;
+}
+
+.priority{
+	display: flex;
+	align-items: center;
+}
+.urgency{
+	display: flex;
+	align-items: center;
+}
+.ticket{
+	display: flex;
+	align-items: center;
+}
+.urgency-policy{
+	display: flex;
+	flex-direction: column;
+}
+.urgency-policy-content{
+	display: flex;
+}
+.ticket-policy{
+	margin-top: 10px;
+	display: flex;
+}
+
+.weight-deadline{
+	display: flex;
+	align-items: center;
+}
+.weight-waiting-time{
+	display: flex;
+	align-items: center;
+}
+
+.share-tree-ticket,
+.function-tickets,
+.override-tickets,
+.total-share-tree-tickets,
+.total-function-tickets,
+.ticket-policy-hierachy{
+	margin-top: 14px;
+}
+
+.share-tree-ticket-tittle,
+.function-tickets-tittle,
+.override-tickets-tittle,
+.total-share-tree-tickets-tittle,
+.total-function-tickets-tittle,
+.max-function-jobs-tittle,
+.max-pending-tasks-per-job-tittle,
+.ticket-policy-hierachy-tittle{
+	margin-bottom: 6px;
+}
+
+.ticket-policy-right,
+.max-pending-tasks-per-job{
+	margin-left: 60px;
+}
+
+.checkbox{
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+}
+.maximum{
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+}
+.bottom{
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.refresh{
+	text-align: center;
+    width: 60px;
+    padding: 4px;
+    margin-right: 20px;
+    border: 1px solid #6286e0;
+    border-radius: 5px;
+    background-color: #6286e0;
+    color: #FFFFFF;
+}
+.apply{
+	text-align: center;
+    width: 60px;
+    padding: 4px;
+    margin-right: 20px;
+    border: 1px solid #6286e0;
+    border-radius: 5px;
+    background-color: #6286e0;
+    color: #FFFFFF;
+}

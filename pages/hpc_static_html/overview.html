@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>overview</title>
+	<link rel="stylesheet" type="text/css" href="iconfont.css">
+	<link href="css/comm.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/selectordie_theme_01.css" rel="stylesheet">
+	<link href="css/overview.css" rel="stylesheet">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/selectordie.min.js"></script>
+	<script src="js/comm.js"></script>
+	<script type="text/javascript" src="/Scripts/StationJSLib.js"></script>
+	<script type="text/javascript" src="/Scripts/common/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="/Scripts/common/jquery.dataTables.whu.plugin.js"></script>
+</head>
+
+<body>
+<div class="outer">
+	<div class="header">
+
+		<div class="header-content">
+			<div class="header-logo">
+				<img src="imgs/wuda-logo.png" class="logo" />
+			</div>
+
+			<div class="header-right">
+				<div class="user">
+					<div class="iron-user">
+						<img src="imgs/iron-user.png" />
+					</div>
+					<div class="user-name">
+						刘工
+					</div>
+				</div>
+				<div class="system-time">
+					10:50 AM
+				</div>
+
+				<div class="question">
+					<img src="imgs/question.png" />
+				</div>
+
+				<div class="refresh">
+					<div class="refresh-iron">
+						<img src="imgs/iron-Refresh.png" />
+					</div>
+					<div class="refresh-select">
+						<select name="time" class="myselect">
+							<option value="jiqunA">不自动刷新</option>
+							<option value="jiqunB">每30秒刷新</option>
+							<option value="jiqunC">每90秒刷新</option>
+						</select>
+					</div>
+				</div>
+				<div class="exit">
+					<img src="imgs/exit.png" />
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="left">
+			<div class="left-iterm" id="overview" onclick="location='overview.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-JobControl.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>概况</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="cluster" onclick="location='cluster.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-ClusterConfiguration.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>集群</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="node" onclick="location='node.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-HostManagement.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>节点</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="work" onclick="location='work.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-ProjectSetting.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>作业</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="line" onclick="location='line.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-QueueControl.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>队列</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="template" onclick="location='template.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-RuleConfiguration.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>模板</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="users" onclick="location='users.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-UserManagement.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>用户</p>
+				</div>
+			</div>
+
+			<div class="left-iterm" id="report" onclick="location='report.html'">
+				<div class="left-iterm-img">
+					<img src="imgs/iron-InformationBrowsing.png" />
+				</div>
+				<div class="left-iterm-font">
+					<p>报告</p>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<!--左侧栏的右边-->
+			<div class="right-header">
+
+			</div>
+			<div class="right-content">
+				<div class="right-content-outer">
+					<div class="content-table">
+						<table class="jobcontrol-table" id="table_content">
+							<thead>
+							<th>序号</th>
+							<th>集群名称</th>
+							<th >节点状态</th>
+							<th >异常</th>
+							<th >关闭</th>
+							<th >管理节点</th>
+							<th >状态</th>
+							<th>开始运行时间</th>
+							</thead>
+						</table>
+
+						<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								outParam = {};
+								columnsDataMap = [
+									{"sDefaultContent" : "",'data': "number"},
+									{"sDefaultContent" : "",'data': "clusterName"},
+									{"sDefaultContent" : "",'data': "nodeStateRight"},
+									{"sDefaultContent" : "",'data': "nodeStateWrong"},
+									{"sDefaultContent" : "",'data': "nodeStateClose"},
+									{"sDefaultContent" : "",'data': "managedNodeName"},
+									{"sDefaultContent" : "",'data': "managedNodeState"},
+									{"sDefaultContent" : "",'data': "runTime"},
+								];
+								$("#table_content").zlDataTables("/HPC/overview/test1.template",outParam,columnsDataMap);
+								// alert(columnsDataMap);
+							});
+						</script>
+					</div>
+					<div class="database">
+						<div class="status-meaning">
+							<div class="status-meaning-item">
+								<div class="status-meaning-state status-dot status-dot-health">
+
+								</div>
+								<div class="status-meaning-text">
+									正常
+								</div>
+							</div>
+							<div class="status-meaning-item">
+								<div class="status-meaning-state status-dot status-dot-busy">
+
+								</div>
+								<div class="status-meaning-text">
+									繁忙
+								</div>
+							</div>
+							<div class="status-meaning-item">
+								<div class="status-meaning-state status-dot status-dot-bad">
+
+								</div>
+								<div class="status-meaning-text">
+									警告
+								</div>
+							</div>
+						</div>
+						<div class="database-top">
+							<div class="database-cpu">
+								<div class="database-tittle">
+									<div class="database-tittle-name">
+										CPU
+									</div>
+									<div class="database-tittle-status status-dot status-dot-health">
+
+									</div>
+								</div>
+								<div class="database-iron content-top2-iron">
+									<div class="content-top2-iron1">
+										<img src="imgs/icon-database.png" />
+									</div>
+									<div class="content-top2-iron2">
+										<img src="imgs/icon-database-load.png" />
+									</div>
+									<div class="database-tittle-data">
+										80%
+									</div>
+								</div>
+							</div>
+
+							<div class="database-ram">
+								<div class="database-tittle">
+									<div class="database-tittle-name">
+										内存
+									</div>
+									<div class="database-tittle-status status-dot status-dot-busy">
+
+									</div>
+								</div>
+								<div class="database-iron content-top2-iron">
+									<div class="content-top2-iron1">
+										<img src="imgs/icon-database.png" />
+									</div>
+									<div class="content-top2-iron2">
+										<img src="imgs/icon-database-load.png" />
+									</div>
+									<div class="database-tittle-data">
+										98%
+									</div>
+								</div>
+							</div>
+
+							<div class="database-slot">
+								<div class="database-tittle">
+									<div class="database-tittle-name-slot">
+										SLOT
+									</div>
+									<div class="database-tittle-status status-dot status-dot-health">
+
+									</div>
+								</div>
+								<div class="database-iron content-top2-iron">
+									<div class="content-top2-iron1">
+										<img src="imgs/icon-database.png" />
+									</div>
+									<div class="content-top2-iron2">
+										<img src="imgs/icon-database-load.png" />
+									</div>
+									<div class="database-tittle-data">
+										3/8
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="database-down">
+							<div class="database-down-work">
+								<div class="work-title">
+									<div class="work-title-text">
+										作业
+									</div>
+									<div class="work-title-select">
+										<select name="time" class="myselect">
+											<option value="jiqunA">过去1小时内</option>
+											<option value="jiqunB">过去6小时内</option>
+											<option value="jiqunC">过去12小时内</option>
+										</select>
+									</div>
+								</div>
+								<div class="work-data">
+									<div class="work-data-item">
+										<div class="work-data-title">
+											退出
+										</div>
+										<div class="work-data-data">
+											0
+										</div>
+									</div>
+									<div class="work-data-item">
+										<div class="work-data-title">
+											等待
+										</div>
+										<div class="work-data-data">
+											0
+										</div>
+									</div>
+									<div class="work-data-item">
+										<div class="work-data-title">
+											暂停
+										</div>
+										<div class="work-data-data">
+											0
+										</div>
+									</div>
+									<div class="work-data-item">
+										<div class="work-data-title">
+											运行
+										</div>
+										<div class="work-data-data">
+											0
+										</div>
+									</div>
+									<div class="work-data-item">
+										<div class="work-data-title">
+											结束
+										</div>
+										<div class="work-data-data">
+											0
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="database-down-user">
+								<div class="database-user">
+									<div class="database-tittle">
+										<div class="database-tittle-name-user">
+											登录用户数
+										</div>
+										<div class="database-tittle-status status-dot status-dot-health">
+
+										</div>
+									</div>
+									<div class="database-iron content-top2-iron">
+										<div class="content-top2-iron1">
+											<img src="imgs/icon-database.png" />
+										</div>
+										<div class="content-top2-iron2">
+											<img src="imgs/icon-database-load.png" />
+										</div>
+										<div class="database-tittle-data">
+											2/60
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+</body>
+
+</html>

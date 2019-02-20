@@ -1,0 +1,186 @@
+
+/*content-right*/
+.right{
+	background-color: #e3e4ef;
+	color: #6286e0;
+}
+.right-header{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.right-header-buttom{
+	display: flex;
+	
+	align-items: center;
+	//border: 1px solid green;
+	color: #6286e0;
+	
+}
+.right-header-commit{
+	text-align: center;
+	width: 80px;
+	padding: 8px;
+	margin-right: 80px;
+	/*color: #6286e0;*/
+	border: 1px solid #6286e0;
+	border-radius: 50px;
+	/*background-color: #6286e0;*/
+	
+}
+.right-header-tickets{
+	text-align: center;
+	width: 80px;
+	padding: 9px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 50px;
+	/*background-color: #6286e0;*/
+}
+.right-header-customize{
+	text-align: center;
+	width: 80px;
+	padding: 9px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 50px;
+	/*background-color: #6286e0;*/
+}
+.right-header-setting{
+	display: flex;
+	//border: 1px solid blue;
+}
+.right-header-setting img{
+	z-index: -1;
+}
+#right-header-setting{
+	display: flex;
+	align-items: center;
+}
+.right-header-font{
+	margin-left: 4px;
+	margin-bottom: 6px;
+	/*color: #616366;*/
+}
+.right-header-hangon{
+	margin-right: 20px;
+	//border: 1px solid red;
+}
+.right-header-run{
+	margin-right: 20px;
+}
+.right-header-delete{
+	margin-right: 20px;
+}
+
+.right-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.right-content-top{
+	display: flex;
+	flex-direction: column;
+	//border: 1px solid red;
+	border-radius: 5px;
+	margin: 30px 20px 20px 30px;
+}
+.content-top1{
+	background-color: #ffffff;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.content-top1-list{
+	margin: 20px 0 10px 80px;
+	color: #5b78ba;
+}
+#content-top1-list-font{
+	color: #c5cdda;
+}
+.Dashboard{
+	margin-bottom: 30px;
+	line-height: 1.3;
+}
+.CurrentMonthEarnings{
+	margin-bottom: 30px;
+}
+.CurrentMonthSales{
+	margin-bottom: 30px;
+}
+#content-top1-tittle{
+	line-height: 1.3;
+	font-size: 25px;
+}
+.LastMonthSummary{
+	text-align: center;
+	background-color: #6286e0;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 180px;
+	color: #eef3f5;
+}
+.content-top1-chart img{
+	//border: 1px solid red;
+	height: 280px;
+	width: auto;
+}
+.content-top1-chart{
+	margin-left: 50px;
+	margin-right: 20px;
+}
+.content-top2{
+	border-top: 1px solid #e3e4ef;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+#content-top2-iron{
+	display: flex;
+	margin-right: 30px;
+	margin-left: 30px;
+	
+}
+#content-top2-iron1{
+	margin-top: 3px;
+	margin-right: 15px;
+}
+.content-top2-tittle{
+	padding-left: 100px;
+	color: #616366;
+}
+.content-top2-database{
+	border-right: 1px solid #e3e4ef;
+}
+.content-top2-tags{
+	border-right: 1px solid #e3e4ef;
+}
+.content-bottom{
+	margin: 20px 20px 30px 30px;
+	background-color:#ffffff ;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.content-bottom-left{
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.content-bottom-right{
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.bottom-tittle{
+	display: flex;
+	margin-left: 100px;
+}
+.bottom-tittle-font{
+	color: #616366;
+	margin-left: 10px;
+}

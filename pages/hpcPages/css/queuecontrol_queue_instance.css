@@ -1,0 +1,207 @@
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	margin-top: 40px;
+}
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	//border: 1px solid green;
+	color: #eef3f5;
+}
+
+.right-header-commit {
+	text-align: center;
+	width: 80px;
+	padding: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-tickets {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-customize {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-setting {
+	display: flex;
+	//border: 1px solid blue;
+	align-items: center;
+}
+
+.right-header-font {
+	//margin-left: 4px;
+	//margin-bottom: 6px;
+	color: #eef3f5;
+}
+
+.right-header-update {
+	text-align: center;
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-delete {
+	text-align: center;
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-hangon {
+	text-align: center;
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-restart {
+	text-align: center;
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-more {
+	position: relative;
+	display: inline-block;
+}
+
+.dropbtn {
+	text-align: center;
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #616366;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #616366;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	padding: 4px 4px 4px 10px;
+	min-width: 100px;
+	text-decoration: none;
+	display: block;
+	color: #616366;
+}
+
+.right-header-more:hover .dropdown-content {
+	display: block;
+}
+
+.right-header-more:hover .dropbtn {
+	background-color: #f1f1f1;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	
+}
+
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+	//border: 1px solid red;
+}
+
+.right-content-outer {
+	margin-bottom: 40px;
+}
+
+.content-table {
+	display: flex;
+	justify-content: center;
+}
+
+.queue-category {
+	display: flex;
+	justify-content: center;
+}
+.cluster-queue{
+	text-align: center;
+	padding: 8px 100px 8px 100px;
+	border: 1px solid lightgray;
+	color: #616366;
+	
+}
+.queue-instance{
+	text-align: center;
+	padding: 8px 100px 8px 100px;
+	border: 1px solid lightgray;
+	//color: #616366;
+	color: #6286e0;
+}
+
+
+.queuecontrol-table {
+	margin-top: 10px;
+	color: #616366;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.content-table {
+	display: flex;
+}
+
+.queuecontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+.table-td-queue{
+	min-width: 80px;
+}

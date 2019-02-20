@@ -1,0 +1,2 @@
+<%:str=sshExec("192.168.10.230","root","Wuda_123","lfs check servers")%>
+<%=:str%>

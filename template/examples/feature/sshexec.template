@@ -1,0 +1,8 @@
+<%
+  :str=sshExec("192.168.10.201","postgres","isswhu2015","cd temp")
+  =:str
+
+  :str=sshExec("192.168.10.201","postgres","isswhu2015","cd temp; ls")
+  :str=replace(:str,"\n","<br>")
+  =:str
+%>

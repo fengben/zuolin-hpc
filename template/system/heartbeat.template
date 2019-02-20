@@ -1,0 +1,13 @@
+<%:x=writeGlobalVar(:varname,:varvalue,:owner,:ttl,:serverToken)%>
+<%If :x=="ok"%>
+    <%debugMsg("ttl has been updated")%>
+<%Else%>
+    <%debugMsg(:x)%>
+<%EndIf%>
+<%:x=registerServer(:serverToken)%>
+<%If :x=="ok"%>
+    <%debugMsg("server has been registered")%>
+<%Else%>
+    <%debugMsg(:x)%>
+<%EndIf%>
+

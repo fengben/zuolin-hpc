@@ -1,0 +1,132 @@
+
+
+.right {
+	color: #616366;
+	font-size: 20px;
+	padding-top: 100px;
+}
+.content-header{
+	display: flex;
+	justify-content: center;
+}
+.general-parameter{
+	padding: 6px 40px 6px 40px;
+	margin-right: 0.5px;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #6286e0;
+	border: 1px solid #6286e0;
+	border-radius: 4px;
+}
+.load-adjustment{
+	padding: 6px 40px 6px 40px;
+	margin-left: 0.5px;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #6286e0;
+	border: 1px solid #6286e0;
+	border-radius: 4px;
+	
+}
+.general-parameter-tittle{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.save-iron {
+	width: 18px;
+}
+.general-parameter-content{
+	display: flex;
+	justify-content: center;
+}
+.alogrithm,
+.schedule-interval,
+.reprioritize-interval,
+.default-duration,
+.max-job-user,
+.load-formula,
+.flush-submit-second,
+.flush-finish-second,
+.maximum-reservation{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.schedule-interval-img,
+.reprioritize-interval-img,
+.default-duration-img{
+	margin-left:10px;
+	margin-top: 6px;
+}
+
+
+.job-schedule-information{
+	display: flex;
+	flex-direction: column;
+}
+.job-schedule-information-selectandtext{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.job-schedule-information-select{
+	margin-right: 10px;
+}
+
+
+
+/*对左右两列进行排版*/
+.parameter-content-left{
+
+	padding: 12px;
+	margin-right: 30px;
+}
+.parameter-content-right{
+
+	padding: 12px;
+	margin-left: 30px;
+}
+
+.list-margin-control{
+	margin: 20px 0 10px 0;
+}
+
+/*重写select*/
+
+/*select高度宽度*/
+.sort-by-load .sod_select{
+	padding: 6px 6px;
+	width: 120px;
+}
+.job-schedule-information-select .sod_select{
+	padding: 6px 6px;
+	width: 120px;
+}
+/*option高度宽度*/
+.sort-by-load .sod_select .sod_list {
+	width: 120px;
+}
+.job-schedule-information-select .sod_select .sod_list {
+	width: 120px;
+}
+/*select箭头位置*/
+.sort-by-load .sod_select:after {
+	top: 8px;
+}
+
+.sort-by-load .sod_select .sod_list li {
+	
+	padding: 6px 6px 6px 25px;
+	
+}
+
+.job-schedule-information-select .sod_select:after {
+	top: 8px;
+}
+
+.job-schedule-information-select .sod_select .sod_list li {
+	
+	padding: 6px 6px 6px 25px;
+	
+}

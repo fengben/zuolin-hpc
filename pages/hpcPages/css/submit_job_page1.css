@@ -1,0 +1,254 @@
+
+
+.right {
+	padding-top: 40px;
+}
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	color: #eef3f5;
+}
+
+.right-header-commit,
+.right-header-post {
+	
+	width: 80px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+
+.right-header-setting {
+	display: flex;
+	margin-left: 200px;
+	align-items: center;
+}
+
+.right-header-font {
+	color: #eef3f5;
+}
+
+.right-header-clean {
+	
+	width: 60px;
+	padding: 7px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-reload,
+.right-header-settings {
+	
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+	
+}
+
+.right-content-outer {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.post-category {
+	display: flex;
+	align-items: center;
+	width: 340px;
+	margin: 20px 0 0 310px;
+	border: 1px solid lightgray;
+	color: #616366;
+	font-size: 16px;
+}
+
+.post-category-tittle {
+	padding: 8px 16px 8px 20px;
+}
+
+.category-jobscript {
+	margin-right: 20px;
+	padding: 11px 20px 8px 20px;
+	background-color: #6286e0;
+	color: #FFFFFF;
+}
+
+.category-bacth {
+	background-color: #6286e0;
+	padding: 11px 20px 8px 20px;
+	color: #FFFFFF;
+}
+
+
+.normal-setting-container {
+	color: #616366;
+	font-size: 20px;
+}
+
+.normal-setting-tittle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.normal-setting-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.normal-setting-left {
+	padding: .75rem;
+	margin-right: 20px;
+	border-radius: .2rem;
+}
+
+.left-margin-control {
+	margin: 20px 0 20px 0;
+}
+
+.normal-setting-right {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	margin-left: 20px;
+	border-radius: .2rem;
+}
+
+.right-margin-control {
+	margin: 20px 0 20px 0;
+}
+
+.normal-setting-save-iron {
+	width: 18px;
+}
+
+.save-iron {
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+/*取消点击radio的阴影*/
+.normal-setting-currentworkingdirectory input:focus,
+.normal-setting-mergeoutput input:focus,
+.normal-setting-notifyjob input:focus,
+.normal-setting-holdjob input:focus,
+.normal-setting-startjobimediately input:focus,
+.normal-setting-jobperservation input:focus{
+	box-shadow: none;
+}
+
+.javascript-tittle {
+	display: flex;
+	align-items: center;
+}
+
+.javascript-textbox,
+.startat-textbox,
+.project-textbox,
+.shell-textbox,
+.stdout-textbox,
+.stderr-textbox,
+.stdin-textbox{
+	margin-left: 6px;
+}
+
+.startat-tittle,
+.project-tittle ,
+.shell-tittle,
+.stdout-tittle,
+.stderr-tittle,
+.stdin-tittle{
+	display: flex;
+	align-items: center;
+}
+
+
+.normal-setting-mergeoutput {
+	margin: 0px 0 20px 0;
+}
+
+
+.normal-setting-notifyjob,
+.normal-setting-holdjob,
+.normal-setting-startjobimediately,
+.normal-setting-jobperservation {
+	margin: 0px 0 20px 0;
+}
+
+
+.advancesettings {
+	display: flex;
+	justify-content: flex-end;
+	color: #6286e0;
+}
+
+.requestresource-textbox{
+	margin-left: 4px;
+	font-size: 16px;
+}
+
+.file-upload {
+	position: relative;
+	padding: 4px 10px;
+	height: 10px;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #6286e0;
+}
+
+.file-style-change {
+	position: absolute;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+/*重写select*/
+
+/*select高度宽度*/
+.normal-setting-restartornot .sod_select{
+	padding: 6px 6px;
+	width: 160px;
+}
+/*option高度宽度*/
+.normal-setting-restartornot .sod_select .sod_list {
+	width: 160px;
+}
+/*select箭头位置*/
+.normal-setting-restartornot .sod_select:after {
+	top: 8px;
+}
+
+.normal-setting-restartornot .sod_select .sod_list li {
+	
+	padding: 6px 6px 6px 25px;
+	
+}

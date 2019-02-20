@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>users</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<link href="css/users.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-right">
+						<div class="user">
+							<div class="iron-user">
+								<img src="imgs/iron-user.png" />
+							</div>
+							<div class="user-name">
+								刘工
+							</div>
+						</div>
+						<div class="system-time">
+							10:50 AM
+						</div>
+
+						<div class="question">
+							<img src="imgs/question.png" />
+						</div>
+
+						<div class="refresh">
+							<div class="refresh-iron">
+								<img src="imgs/iron-Refresh.png" />
+							</div>
+							<div class="refresh-select">
+								<select name="time" class="myselect">
+									<option value="jiqunA">不自动刷新</option>
+									<option value="jiqunB">每30秒刷新</option>
+									<option value="jiqunC">每90秒刷新</option>
+								</select>
+							</div>
+						</div>
+						<div class="exit">
+							<img src="imgs/exit.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<div class="left-iterm" id="overview" onclick="location='overview.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>概况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="cluster" onclick="location='cluster.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="node" onclick="location='node.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>节点</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="work" onclick="location='work.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="line" onclick="location='line.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="template" onclick="location='template.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>模板</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="users" onclick="location='users.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="report" onclick="location='report.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>报告</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+					<div class="right-header">
+						<div class="new-outer right-header-item-outer">
+							<div class="new-iron">
+								<img src="imgs/add.png">
+							</div>
+							<div class="new-text">
+								新建
+							</div>
+						</div>
+						<div class="time-out-outer right-header-item-outer">
+							<div class="time-out-iron">
+								<img src="imgs/time-out.png">
+							</div>
+							<div class="time-out-text">
+								冻结
+							</div>
+						</div>
+						<div class="restore-outer right-header-item-outer">
+							<div class="restore-iron">
+								<img src="imgs/restore.png">
+							</div>
+							<div class="restore-text">
+								恢复
+							</div>
+						</div>
+						<div class="delete-outer right-header-item-outer">
+							<div class="delete-iron">
+								<img src="imgs/delete.png">
+							</div>
+							<div class="delete-text">
+								删除
+							</div>
+						</div>
+						<div class="custom-outer right-header-item-outer">
+							<div class="custom-iron">
+								<img src="imgs/users.png">
+							</div>
+							<div class="custom-text">
+								角色管理
+							</div>
+						</div>
+					</div>
+					<div class="right-content">
+						<div class="right-content-outer">
+							<div class="content-table">
+								<div class="jobcontrol-table">
+									<table>
+										<tr>
+											<td>
+												<input type="checkbox" />
+											</td>
+											<td>序号</td>
+											<td>显示名</td>
+											<td>关联系统账户</td>
+											<td>角色</td>
+											<td>最后登录时间</td>
+											<td>编辑</td>
+											<td>状态</td>
+											<td>删除</td>
+											<td>单位</td>
+											<td>备注1</td>
+											<td>备注2</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" />
+											</td>
+											<td>1</td>
+											<td>刘工</td>
+											<td>lavauser</td>
+											<td>普通用户</td>
+											<td></td>
+											<td>
+												<img src="imgs/set.png">
+											</td>
+											<td>正常</td>
+											<td>
+												<img src="imgs/delete.png">
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="database">
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

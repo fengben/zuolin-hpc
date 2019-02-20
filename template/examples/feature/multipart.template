@@ -1,0 +1,5 @@
+i=<%=:i%><br>
+userId=<%=:userId%><br>
+userToken=<%=:userToken%><br>
+<%=writeToFile(:multipart_filename1,&multipart_filecontent1)%><br>
+在javascript中调用loadFromWS()或getFromWS()函数时，userId和userToken会自动传递给服务器

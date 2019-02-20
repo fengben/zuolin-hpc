@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mdt_switch_settings</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/mdt_switch_settings.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource" onclick="location='job_control.html'">
+							资源调度
+						</div>
+
+						<div class="storage" onclick="location='disk_condition.html'">
+							存储管理
+						</div>
+
+						<div class="settings" onclick="location='system_settings.html'">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<!--左侧栏-->
+				<div class="left">
+					<div class="left-iterm" onclick="location='#'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-DiskCondition.png" />
+						</div>
+						<div class="left-iterm-font" onclick="location='disk_condition.html'" id="left-iterm-font">
+							<p>磁盘情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='#'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RealTimeMonitoring.png" />
+						</div>
+						<div class="left-iterm-font" onclick="location='real_time_monitoring.html'">
+							<p>实时监控</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="right">
+					<div class="mdt-setting">
+						<div class="mdt-setting-tittle">
+							MDT切换设置
+						</div>
+
+						<div class="mount-directory">
+							<div class="mount-directory-title">
+								请输入挂载目录
+							</div>
+							<div class="mount-directory-text">
+								<input type="text">
+							</div>
+						</div>
+
+						<table>
+							<tr>
+								<td>MDT</td>
+								<td>网卡</td>
+								<td>当前MDS地址</td>
+								<td>盘符</td>
+								<td style="width: 240px;">备用MDS地址</td>
+
+							</tr>
+							<tr>
+								<td>whufs-MDT0000</td>
+								<td>
+									<div class="network-card">
+										<select name="network-card">
+											<option value="ens192">ens192</option>
+											<option value="vr0">vr0</option>
+											<option value="vr1">vr1</option>
+										</select>
+									</div>
+								</td>
+								<td>192.168.10.214</td>
+								<td>
+									<div class="drive">
+										<select name="drive">
+											<option value="sdb">sdb</option>
+											<option value="sdc">sdc</option>
+											<option value="sdd">sdd</option>
+										</select>
+
+										<div class="from-switch">切换</div>
+
+									</div>
+								</td>
+								<td>
+									<div class="alternate-address">
+										<table>
+											<tr>
+												<td>192.168.10.215</td>
+												<td>192.168.10.216</td>
+												<td>192.168.10.217</td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td style="border: none;">
+									<div class="from-probe">探测</div>
+								</td>
+							</tr>
+						</table>
+
+						<div class="command-prompt">
+							<div class="command-1-outer">
+								<div class="command-1">
+									mds0# umount /mnt/lustre/mdt0001
+								</div>
+								<div class="command-1">
+									mds1# mount -t lustre /dev/sdb /mnt/lustre/mdt0001
+								</div>
+							</div>
+							<div class="command-2-outer">
+								<div class="command-2">
+									tunefs.lustre /dev/sdc
+								</div>
+								<div class="command-2">
+									ifconfig
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

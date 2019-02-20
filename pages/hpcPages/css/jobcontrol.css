@@ -1,0 +1,163 @@
+/*content-right*/
+
+.right {
+	//background-color: #e3e4ef;
+	margin-top: 40px;
+}
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	//border: 1px solid green;
+	color: #eef3f5;
+}
+
+.right-header-commit {
+	text-align: center;
+	width: 80px;
+	padding: 10px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-tickets {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-customize {
+	text-align: center;
+	width: 80px;
+	padding: 12px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-setting {
+	display: flex;
+	//border: 1px solid blue;
+}
+
+#right-header-setting {
+	display: flex;
+	align-items: center;
+}
+
+.right-header-font {
+	margin-left: 4px;
+	margin-bottom: 6px;
+	color: #616366;
+}
+
+.right-header-hangon {
+	margin-right: 20px;
+	//border: 1px solid red;
+}
+
+.right-header-run {
+	margin-right: 20px;
+}
+
+.right-header-delete {
+	margin-right: 20px;
+}
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+	//border: 1px solid red;
+}
+.right-content-outer{
+	margin-bottom: 40px;
+}
+.content-table {
+	display: flex;
+	justify-content: center;
+}
+
+.job-status {
+	display: flex;
+	justify-content: center;
+}
+
+.status-waiting {
+	margin: 20px 160px 20px 160px;
+	color: #6286e0;
+}
+
+.status-running {
+	margin: 20px 160px 20px 160px;
+	color: #616366;
+}
+
+.status-completed {
+	margin: 20px 160px 20px 160px;
+	color: #616366;
+}
+
+.jobcontrol-table {
+	color: #616366;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.content-table {
+	display: flex;
+}
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+.table-checkbox-list {
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.table-checkbox {
+	padding-bottom: 9px;
+	padding-top:10px;
+}
+
+.table-checkbox input {
+	position: absolute;
+	left: -999999px;
+}
+
+.mark::before {
+	content: '\a0';
+	display: inline-block;
+	border: 1px solid #616366;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.table-checkbox input[type="checkbox"]:checked+.mark::before {
+	content: '\2713';
+	color: #6286e0;
+}

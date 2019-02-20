@@ -1,0 +1,125 @@
+
+.right {
+	padding-top: 40px;
+}
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	color: #eef3f5;
+}
+
+.right-header-commit,
+.right-header-tickets,
+.right-header-customize {
+	width: 80px;
+	padding: 10px;
+	margin-right: 80px;
+	border: 1px solid #6286e0;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-setting {
+	display: flex;
+}
+
+#right-header-setting {
+	display: flex;
+	align-items: center;
+}
+
+.right-header-font {
+	margin-left: 4px;
+	margin-bottom: 6px;
+	color: #616366;
+}
+
+.right-header-hangon,
+.right-header-run,
+.right-header-delete,
+.right-header-more {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	
+}
+
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+}
+.right-content-outer{
+	margin-bottom: 40px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+.content-table,
+.job-status  {
+	display: flex;
+	justify-content: center;
+	color: #616366;
+}
+.status-waiting{
+	color: #6286e0;
+}
+
+.status-waiting,
+.status-running, 
+.status-completed{
+	margin: 20px 160px 20px 160px;
+	
+}
+
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+.table-checkbox-list {
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.table-checkbox {
+	padding-bottom: 9px;
+	padding-top:10px;
+}
+
+.table-checkbox input {
+	position: absolute;
+	left: -999999px;
+}
+
+.mark::before {
+	content: '\a0';
+	display: inline-block;
+	border: 1px solid #616366;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.table-checkbox input[type="checkbox"]:checked+.mark::before {
+	content: '\2713';
+	color: #6286e0;
+}

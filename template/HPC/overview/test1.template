@@ -1,0 +1,27 @@
+<%
+  :jsonDataArray = ""
+  :number = "1"
+  :clusterName = "openlava-1"
+  :nodeStateRight = "正常(3/3)"
+  :nodeStateWrong = "异常(0)"
+  :nodeStateClose = "关闭(0)"
+  :managedNodeName = "el7-242"
+  :managedNodeState = "OK"
+  :runTime = "2019-02-20"
+  :jsonData = jsonAddItem("", "number", S(:number))
+  :jsonData = jsonAddItem(:jsonData, "clusterName", S(:clusterName))
+  :jsonData = jsonAddItem(:jsonData, "nodeStateRight", S(:nodeStateRight))
+  :jsonData = jsonAddItem(:jsonData, "nodeStateWrong", S(:nodeStateWrong))
+  :jsonData = jsonAddItem(:jsonData, "nodeStateClose", S(:nodeStateClose))
+  :jsonData = jsonAddItem(:jsonData, "managedNodeName", S(:managedNodeName))
+  :jsonData = jsonAddItem(:jsonData, "managedNodeState", S(:managedNodeState))
+  :jsonData = jsonAddItem(:jsonData, "runTime", S(:runTime))
+  :jsonDataArray = jsonAddArrayItem(:jsonDataArray, :jsonData)
+
+ :jsonResult = jsonAddItem("", "data", :jsonDataArray)
+ :jsonResult = jsonAddItem(:jsonResult, "currentPage", :currentPage)
+ :jsonResult = jsonAddItem(:jsonResult, "pageSize", :pageSize)
+ :jsonResult = jsonAddItem(:jsonResult, "start", :start))
+ :jsonResult = jsonAddItem(:jsonResult, "total", :totalItems)
+ = :jsonResult
+%>

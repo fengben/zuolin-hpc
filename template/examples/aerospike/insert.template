@@ -1,0 +1,14 @@
+在aerospike中，insert同时兼具插入和修改的功能
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(1,1,2,'张三1',18,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(2,2,2,'张三2',28,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(3,3,3,'张三3',38,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(4,4,3,'张三4',48,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(5,5,4,'张三5',58,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(6,6,2,'张三6',68,'鼓风机厂')"%>
+    <%=execAerospike(:aqlStr)%> 
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Parallel Configuration Add And Modify</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/parallel_configuration_add_and_modify.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource" onclick="location='job_control.html'">
+							资源调度
+						</div>
+
+						<div class="storage" onclick="location='disk_condition.html'">
+							存储管理
+						</div>
+
+						<div class="settings" onclick="location='system_settings.html'">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<div class="left-iterm" onclick="location='job_control.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='queue_control_cluster_queue.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='submit_job_page1.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png"/>
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='complex_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='host_management.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='cluster_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='scheduling_configuration_page1.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='user_manager_manager.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='parallel_configuration.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font" id="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint" onclick="location='check_point.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='rule_setting.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='project_setting.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='resource_quota.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='reservation_status.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='information_browsing.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" onclick="location='log_calendar.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="addandmodify-tittle">
+						添加或修改PE
+					</div>
+					<div class="addandmodify-content">
+						<div class="addandmodify-content-left">
+							<div class="name left-margin-control">
+							 	<div class="name-tittle">
+							 		Name
+							 	</div>
+							 	<div class="name-textbox textbox-control">
+							 		<input type="text" name="name" id="name" value="" placeholder="单行输入"/>
+							 	</div>
+							</div>
+							 
+							<div class="user-list left-margin-control">
+							 	<div class="user-list-tittleandimg">
+							 		<div class="user-list-tittle">
+							 			User List
+							 		</div>
+							 		<div class="user-list-save-iron">
+							 			<img src="imgs/iron-save.png" class="save-iron"/>
+							 		</div>
+							 	</div>
+							 	<div class="user-list-box">
+							 		
+							 	</div>
+							</div>
+							 
+							<div class="start-proc-args left-margin-control">
+								<div class="start-proc-args-tittle">
+									Start Proc Args
+								</div>
+								<div class="start-proc-args-textbox textbox-control">
+									<input type="text" name="start-proc-args" id="start-proc-args" value="" placeholder="/bin/true"/>
+								</div>
+							</div>
+							
+							<div class="stop-proc-args left-margin-control">
+								<div class="stop-proc-args-tittle">
+									Stop Proc Args
+								</div>
+								<div class="stop-proc-args-textbox textbox-control">
+									<input type="text" name="stop-proc-args" id="stop-proc-args" value="" placeholder="/bin/true"/>
+								</div>
+							</div>
+							
+							<div class="radio1 left-margin-control">
+								<div class="control-slaves">
+									<input type="radio" name="control-slaves" id="control-slaves" value="" /> Control Slaves
+								</div>
+								<div class="job-id-first-task  left-margin-control textbox-control">
+									<input type="radio" name="job-id-first-task" id="job-id-first-task" value="" /> Job Id First Task
+								</div>
+							</div>
+							
+							
+							
+							
+						</div>
+						<div class="addandmodify-content-right">
+							<div class="slot left-margin-control">
+							 	<div class="slot-tittle">
+							 		Slot
+							 	</div>
+							 	<div class="slot-textbox textbox-control">
+							 		<input type="text" name="slot" id="slot" value="" placeholder="0"/>
+							 	</div>
+							</div>
+							
+							<div class="xuser-list left-margin-control">
+							 	<div class="xuser-list-tittleandimg">
+							 		<div class="xuser-list-tittle">
+							 			Xuser List
+							 		</div>
+							 		<div class="xuser-list-save-iron">
+							 			<img src="imgs/iron-save.png" class="save-iron"/>
+							 		</div>
+							 	</div>
+							 	<div class="xuser-list-box">
+							 		
+							 	</div>
+							</div>
+							
+							<div class="allocation-pule left-margin-control">
+								<div class="allocation-pule-tittle">
+									Allcation Pule
+								</div>
+								<div class="allocation-pule-textbox textbox-control">
+									<input type="text" name="allocation-pule" id="allocation-pule" value="" placeholder="$pe_slots"/>
+								</div>
+							</div>
+							
+							<div class="urgency-slots left-margin-control">
+								<div class="urgency-slots-tittle">
+									Urgency Slots
+								</div>
+								<div class="urgency-slots-textbox textbox-control">
+									<input type="text" name="start-proc-args" id="start-proc-args" value="" placeholder="min"/>
+								</div>
+							</div>
+							
+							<div class="radio2 left-margin-control">
+								<div class="accounting-summary">
+									<input type="radio" name="accounting-summary" id="accounting-summary" value="" /> Accounting Summary
+								</div>
+								
+							</div>
+							
+							<div class="bottom left-margin-control">
+								<div class="cancel">
+									cancel
+								</div>
+								<div class="submit">
+									ok
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

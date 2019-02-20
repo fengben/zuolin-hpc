@@ -1,0 +1,4 @@
+  <%:tuid = 2018180039170000022%>
+  <%:sqlstr1="delete from person where id=?"%>
+  <%:x=execSQL(:sqlstr1,L(:tuid))%>
+  <%=:x%>

@@ -1,0 +1,8 @@
+<%Require :x,"examples/workflow/provider1.template","operand1=5","user=user1" %>
+    please run examples/workflow/provider1.template?__targetFlowId__=<%=templateSessionId()%>&user=user1<br>
+<%EndRequire%>
+<%Require :y,"examples/workflow/provider2.template","operand2=6","user=user2" /%>
+///:x is <%=:x%><br>
+///    please run examples/workflow/provider2.template?__targetFlowId__=<%=templateSessionId()%>&user=user2<br>
+///<%EndRequire%>
+the final result of this workflow is <%=:x+:y%>

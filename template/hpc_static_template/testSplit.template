@@ -1,0 +1,11 @@
+<%
+:i = "HOST_NAME status r15s r1m r15m ut pg ls it tmp swp mem el7-247 ok 0.1 0.0 0.0 0% 0.0 0 2708 19G 2.9G 3.1G el7-244 ok 0.2 0.0 0.0 0% 0.0 0 2688 20G 2.9G 7G el7-242 ok 1.0 0.1 0.2 14% 0.0 1 4 15G 2.9G 4.6G"
+split(:i,"\n",&array)
+
+:i=0
+While :i< arrayLength(&array)
+  =:array[:i]
+  :i= :i +1
+EndWhile
+
+%>

@@ -1,0 +1,5 @@
+<%=javaExample("zhang 3 & Lee 4")%>
+<br>
+<%=javaRoutine@ZoolinaTemplateApi(S("hello"),S("world"))%>
+<br>
+<%=add@ZoolinaTemplateApi(11,24)%>

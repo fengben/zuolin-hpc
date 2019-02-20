@@ -1,0 +1,10 @@
+
+  <%:sqlstr1="select md5(name) as ss, id,city_id, name from person where id<? order by id desc"%>
+  <%:x=changeRecordSet(:sqlstr1,"4L")%>
+  <%:count=recordCount()%>
+  <%debugMsg("recordCount is "+:count)%>
+  <%If :count>0%>
+   <%Repeat%> 
+        <%=id%>&nbsp;<%=ss%>&nbsp;<%=name%><br>
+    <%EndRepeat%>
+  <%EndIf%>

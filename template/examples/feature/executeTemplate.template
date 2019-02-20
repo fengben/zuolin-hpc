@@ -1,0 +1,1 @@
+<%=executeTemplate("examples/grammar/reference.template","a=1&b=2")%>

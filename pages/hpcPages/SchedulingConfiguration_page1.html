@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Scheduling Configuration General Parameter</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/schedulingconfiguration_page1.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+					<div class="content-header">
+						<div class="general-parameter">
+							General Parameter
+						</div>
+						<div class="load-adjustment">
+							Load Adjustment
+						</div>
+					</div>
+					<div class="general-parameter-tittle">
+						General Parameter
+					</div>
+					<div class="general-parameter-content">
+						<div class="parameter-content-left">
+							<div class="alogrithm  list-margin-control">
+								<div class="alogrithm-tittle">
+									Alogrithm：
+								</div>
+								<div class="alogrithm-textbox">
+									<input type="text" name="alogrithm" id="alogrithm" value="" placeholder="单行输入"/>
+								</div>
+							</div>
+							
+							<div class="schedule-interval  list-margin-control">
+								<div class="schedule-interval-tittle">
+									Schedule Interval：
+								</div>
+								<div class="schedule-interval-textbox">
+									<input type="text" name="schedule-interval" id="schedule-interval" value="" placeholder="单行输入"/>
+								</div>
+								<div class="schedule-interval-img">
+									<img src="imgs/iron-save.png" class="save-iron"/>
+								</div>
+							</div>
+							
+							<div class="reprioritize-interval  list-margin-control">
+								<div class="reprioritize-interval-tittle">
+									Reprioritize Interval：
+								</div>
+								<div class="reprioritize-interval-textbox">
+									<input type="text" name="reprioritize-interval" id="reprioritize-interval" value="" placeholder="单行输入"/>
+								</div>
+								<div class="reprioritize-interval-img">
+									<img src="imgs/iron-save.png" class="save-iron"/>
+								</div>
+							</div>
+							
+							<div class="default-duration  list-margin-control">
+								<div class="default-duration-tittle">
+									Default Duration：
+								</div>
+								<div class="default-duration-textbox">
+									<input type="text" name="default-duration" id="default-duration" value="" placeholder="单行输入"/>
+								</div>
+								<div class="default-duration-img">
+									<img src="imgs/iron-save.png" class="save-iron"/>
+								</div>
+							</div>
+							
+							<div class="max-job-user list-margin-control">
+								<div class="max-job-user-tittle">
+									Max Job/User：
+								</div>
+								<div class="max-job-user-textbox">
+									<input type="text" name="max-job-user" id="max-job-user" value="" placeholder="0"/>
+								</div>
+							</div>
+							
+							<div class="sort-by-load list-margin-control">
+								<select name="sort-by-load-select">
+									<option value="">Sort by load</option>
+								</select>
+							</div>
+							
+							<div class="job-schedule-information list-margin-control">
+								<div class="job-schedule-information-tittle">
+									Job Schedule Information：
+								</div>
+								<div class="job-schedule-information-selectandtext">
+									<div class="job-schedule-information-select">
+										<select name="job-schedule-information-select">
+											<option value="">False</option>
+											<option value="">True</option>
+										</select>
+									</div>
+									<div class="job-schedule-information-text">
+										<input type="text" name="job-schedule-information-text" id="job-schedule-information-text" value="" placeholder="单行输入"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="parameter-content-right">
+							<div class="load-formula list-margin-control">
+								<div class="load-formula-tittle">
+									Load Formula：
+								</div>
+								<div class="load-formula-textbox">
+									<input type="text" name="load-formula-textbox" id="load-formula-textbox" value="" placeholder="单行输入"/>
+								</div>
+							</div>
+							
+							<div class="flush-submit-second list-margin-control">
+								<div class="flush-submit-second-tittle">
+									Flush Submit Second：
+								</div>
+								<div class="flush-submit-second-textbox">
+									<input type="text" name="flush-submit-second-textbox" id="flush-submit-second-textbox" value="" placeholder="单行输入"/>
+								</div>
+							</div>
+							
+							<div class="flush-finish-second list-margin-control">
+								<div class="flush-finish-second-tittle">
+									Flush Finish Second：
+								</div>
+								<div class="flush-finish-second-textbox">
+									<input type="text" name="flush-finish-second-textbox" id="flush-finish-second-textbox" value="" placeholder="单行输入"/>
+								</div>
+							</div>
+							
+							<div class="maximum-reservation list-margin-control">
+								<div class="maximum-reservation-tittle">
+									Maximum Reservation：
+								</div>
+								<div class="maximum-reservation-textbox">
+									<input type="text" name="maximum-reservation-textbox" id="maximum-reservation-textbox" value="" placeholder="单行输入"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

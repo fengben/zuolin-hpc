@@ -1,0 +1,13 @@
+<%
+///JSON示例
+///按如下格式拼接JSON
+///{
+///"key1":"value1",
+///"key2":"value2",
+///"key3":"value3"
+///}
+:data=jsonAddItem("","key1",'value1')
+:data=jsonAddItem(:data,"key2",3)
+:data=jsonAddItem(:data,"key3",S("value4"))
+=:data
+%>

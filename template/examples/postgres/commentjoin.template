@@ -1,0 +1,7 @@
+<!-- databaseName=demo_iss_backup -->
+<%:id=4%>
+<!-- person{id,name as name1,company}{city_id=:id}{} {} -->   ///:id表示变量的值从外部获取；{}表示排序条件为空
+<!-- city{name as name2}{person.city_id=city.id}{} {}-->   ///从第二个表开始，每个表都必须与前面的表关联起来；{}表示不需要排序；后一个{}表示不需要设定返回记录数；实际上这两个表是联立查询的
+<%Repeat%>
+    <%=name1%>&nbsp;<%=name2%>&nbsp;<%=id%>&nbsp;<%=company%>  <br>
+<%EndRepeat%>

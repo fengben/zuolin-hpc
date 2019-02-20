@@ -1,0 +1,282 @@
+
+
+
+.right-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.right-header-buttom {
+	display: flex;
+	align-items: center;
+	color: #eef3f5;
+}
+
+
+.right-header-post {
+	width: 80px;
+	padding: 7px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+
+.right-header-setting {
+	display: flex;
+	margin-left: 200px;
+	align-items: center;
+}
+
+.right-header-font {
+	color: #eef3f5;
+}
+
+.right-header-clean {
+	width: 60px;
+	padding: 7px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+.right-header-reload,
+.right-header-settings {
+	width: 60px;
+	padding: 8px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #6286e0;
+	border-radius: 5px;
+	background-color: #6286e0;
+}
+
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+}
+
+.right-content-outer {
+	margin-bottom: 40px;
+}
+
+
+
+/**/
+.save-iron img{
+	width: 18px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.advanced-setting-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #616366;
+	font-size: 20px;
+}
+.advanced-setting-item{
+	display: flex;
+	justify-content: center;
+}
+
+.parallel-enviroment{
+	display: flex;
+	align-items: center;
+}
+.parallel-enviroment-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.enviroment{
+	display: flex;
+	align-items: center;
+}
+.enviroment-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.context{
+	display: flex;
+	align-items: center;
+}
+.context-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.checkpoint-object{
+	display: flex;
+	align-items: center;
+}
+.checkpoint-object-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.account{
+	display: flex;
+	align-items: center;
+}
+.account-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.advance-reservation{
+	display: flex;
+	align-items: center;
+}
+.advance-reservation-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.jsv-url{
+	display: flex;
+	align-items: center;
+}
+.jsv-url-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.binding{
+	display: flex;
+	align-items: center;
+}
+.binding-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.verify-mode{
+	display: flex;
+	align-items: center;
+}
+
+.mail-checkbox{
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.mail-checkbox input:focus {
+	box-shadow: none;
+}
+.start-of-job{
+	margin-right: 20px;
+}
+.mail-to{
+	display: flex;
+	align-items: center;
+}
+.mail-to-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hard-queue-list{
+	display: flex;
+	align-items: center;
+}
+.hard-queue-list-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.soft-queue-list{
+	display: flex;
+	align-items: center;
+}
+.soft-queue-list-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.master-queue-list{
+	display: flex;
+	align-items: center;
+}
+.master-queue-list-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.job-dependecies{
+	display: flex;
+	align-items: center;
+}
+.job-dependecies-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hold-array-dependecies{
+	display: flex;
+	align-items: center;
+}
+.hold-array-dependecies-boxandimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*对左右两列进行排版*/
+.advanced-setting-left{
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	margin-right: 30px;
+	margin-left: 60px;
+}
+.advanced-setting-right{
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	margin-left: 30px;
+}
+
+.list-margin-control{
+	margin: 20px 0 10px 0;
+}
+
+
+/*重写select*/
+
+/*select高度宽度*/
+.verify-mode-select .sod_select{
+	padding: 6px 6px;
+	width: 120px;
+}
+/*option高度宽度*/
+.verify-mode-select .sod_select .sod_list {
+	width: 120px;
+}
+/*select箭头位置*/
+.verify-mode-select .sod_select:after {
+	top: 8px;
+}
+
+.verify-mode-select .sod_select .sod_list li {
+	padding: 6px 6px 6px 25px;
+	
+}

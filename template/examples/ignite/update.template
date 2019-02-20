@@ -1,0 +1,4 @@
+  <%:time=getCurrentTime@ZoolinaTemplateApi()%>
+  <%:sqlstr1="update person set company=? where id=?"%>
+  <%:x=execSQL(:sqlstr1,S(:time),1L)%>
+  <%=:x%>

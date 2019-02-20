@@ -1,0 +1,83 @@
+
+.settings-form{
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	margin-top: 40px;
+}
+.settings-tittle{
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+table {
+	align-self: center;
+	border-collapse: collapse;
+}
+
+.settings-form td{
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+
+.setting-button{
+	display: flex;
+	justify-content: flex-end;
+	margin: 2% 13% 0 0;
+}
+.settings-save,.add-button {
+	padding: 4px;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	color: #616366;
+}
+.delete-btn{
+	padding: 2px 4px 3px 4px;
+	height: 28px;
+	width: 46px;
+	border: 1px solid #d9534f;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #d9534f;
+	outline:none;
+}
+.edit-btn{
+	padding: 2px 4px 3px 4px;
+	height: 28px;
+	width: 46px;
+	border: 1px solid #23a393;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #23a393;
+	outline:none;
+}
+
+.btn-delete-active{
+	padding: 2px 4px 4px 4px;
+	height: 20px;
+	width: 36px;
+	margin-left: 58px;
+	border: 1px solid #d9534f;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #d9534f;
+}
+
+
+
+.table-edit-input-text {
+	color: red;
+	padding-left: 10px;
+	width: 100px;
+	height: 40px;
+	background-position: 25px 25px;
+}

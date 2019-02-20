@@ -1,0 +1,4 @@
+<%:str=sshExec("192.168.10.217","root","Wuda_123"," dstat -m -c -d -n 2 2")%>
+<%:str=replace(:str,"\n","<br>"%>
+<%:resultStr=:str%>
+<%=:resultStr%>

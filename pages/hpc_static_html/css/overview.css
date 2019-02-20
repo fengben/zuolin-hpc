@@ -1,0 +1,187 @@
+
+.right {
+	padding-top: 40px;
+}
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #FFFFFF;
+	margin: 20px 40px 20px 40px;
+}
+.right-content-outer{
+	margin-bottom: 40px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+.content-table {
+	display: flex;
+	justify-content: center;
+	color: #616366;
+}
+
+
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+.jobcontrol-table th {
+
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid lightgray;
+}
+.status{
+	display: flex;
+}
+.status-text{
+	margin-left: 10px;
+}
+.status-dot{
+	width: 20px;
+	height: 20px;
+	margin-left: 32px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+}
+
+.status-dot-gray{
+	background-color: #e4e4e4;
+}
+.status-dot-busy{
+	background-color: #fab95b;
+}
+
+.status-dot-health{
+	background-color: #aef4a4;
+}
+.status-dot-bad{
+	background-color: #db2d43;
+}
+
+/*  */
+.database{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+.status-meaning{
+	display: flex;
+}
+.status-meaning-item{
+	display: flex;
+}
+.status-meaning-text{
+	margin-left: 20px;
+}
+.database-top{
+	display: flex;
+	margin-top: 10px;
+
+}
+
+.database-cpu{
+	border: 1px solid lightgray;
+	padding: 10px;
+	height: 106.8px;
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.database-ram,
+.database-slot,
+.database-user{
+	border: 1px solid lightgray;
+	padding: 10px;
+	margin-left: 40px;
+	height: 106.8px;
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.database-tittle{
+	display: flex;
+	padding-bottom: 10px;
+
+}
+.database-tittle-name{
+	margin: 0 184px 0 30px;
+}
+.database-tittle-name-slot{
+	margin: 0 174px 0 30px;
+}
+.database-tittle-name-user{
+	margin: 0 140px 0 30px;
+}
+
+
+.content-top2-tittle{
+	padding-left: 140px;
+	color: #616366;
+}
+.content-top2-iron{
+	display: flex;
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
+.content-top2-iron1{
+	margin-top: 3px;
+	margin-right: 15px;
+}
+.database-tittle-data{
+	margin: 3px 0 0 20px;
+}
+.database-down{
+	display: flex;
+	margin-top: 30px;
+}
+.database-down-work{
+	border: 1px solid lightgray;
+	width: 804px;
+}
+.work-title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.work-title-text{
+	margin-left: 80px;
+}
+.work-title-select{
+	margin-right: 40px;
+}
+.work-data{
+	display: flex;
+	justify-content: center;
+}
+.work-data-item{
+	display: flex;
+	flex-direction: column;
+	margin: 10px 10px 10px 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 下拉列表 */
+.sod_select{
+	width: 140px;
+}
+.sod_select .sod_list{
+	width: 140px;
+}

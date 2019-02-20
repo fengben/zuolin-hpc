@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SubmitJob_page2</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/submitjob_page2.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<!--整体布局-->
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-menu">
+						<div class="jiqun select">
+							<select name="jiqun" class="myselect">
+								<option value="jiqunA">集群A</option>
+								<option value="jiqunB">集群B</option>
+								<option value="jiqunC">集群C</option>
+							</select>
+						</div>
+
+						<div class="resource">
+							资源调度
+						</div>
+
+						<div class="storage">
+							存储管理
+						</div>
+
+						<div class="settings">
+							系统设置
+						</div>
+					</div>
+
+					<div class="header-right">
+						<div class="system-time">
+							系统时间：2018-10-10 13:14
+						</div>
+
+						<div class="iron-inform">
+							<img src="imgs/iron-inform.png" />
+						</div>
+
+						<div class="iron-user">
+							<img src="imgs/iron-user.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<!--左侧栏-->
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列控制</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Submit.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>提交作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ComplexConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>复杂配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>主机管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-SchedulingConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>调度配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户管理</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ParallelConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>并行配置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm checkpoint">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-CheckingPoint2.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>检查点&nbsp&nbsp&nbsp</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>规则设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>项目设置</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ResourceQuota.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>资源配额</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ReservationStatus.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>预约情况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>信息浏览</p>
+						</div>
+					</div>
+
+					<div class="left-iterm">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-Log.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>日志日历</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<!--左侧栏的右边-->
+
+					<div class="right-header">
+
+						<div class="right-header-buttom">
+							<div class="right-header-post">
+								提交
+							</div>
+						</div>
+
+						<div class="right-header-setting">
+							<div class="right-header-clean">
+								<div class="right-header-font">
+									清空
+								</div>
+							</div>
+
+							<div class="right-header-reload">
+								<div class="right-header-font">
+									Reload
+								</div>
+							</div>
+
+							<div class="right-header-settings">
+								<div class="right-header-font">
+									setting
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right-content">
+						<div class="right-content-outer">
+							<div class="advanced-setting">
+								<div class="advanced-setting-container">
+									<div class="advanced-setting-tittle">高级设置</div>
+									<div class="advanced-setting-item">
+										<div class="advanced-setting-left">
+											<div class="parallel-enviroment list-margin-control">
+												<div class="parallel-enviroment-tittle">
+													Parallel Enviroment：
+												</div>
+												<div class="parallel-enviroment-boxandimg">
+													<div class="parallel-enviroment-textbox">
+														<input type="text" name="parallel-enviroment" id="parallel-enviroment" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="enviroment list-margin-control">
+												<div class="enviroment-tittle">
+													Enviroment：
+												</div>
+												<div class="enviroment-boxandimg">
+													<div class="enviroment-textbox">
+														<input type="text" name="enviroment" id="enviroment" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="context list-margin-control">
+												<div class="context-tittle">
+													Context：
+												</div>
+												<div class="context-boxandimg">
+													<div class="context-textbox">
+														<input type="text" name="context" id="context" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="checkpoint-object list-margin-control">
+												<div class="checkpoint-object-tittle">
+													Checkpoint Object：
+												</div>
+												<div class="checkpoint-object-boxandimg">
+													<div class="checkpoint-object-textbox">
+														<input type="text" name="checkpoint-object" id="checkpoint-object" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="account list-margin-control">
+												<div class="account-tittle">
+													Account：
+												</div>
+												<div class="account-boxandimg">
+													<div class="account-textbox">
+														<input type="text" name="account" id="account" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="advance-reservation list-margin-control">
+												<div class="advance-reservation-tittle">
+													Advance Reservation：
+												</div>
+												<div class="advance-reservation-boxandimg">
+													<div class="advance-reservation-textbox">
+														<input type="text" name="advance-reservation" id="advance-reservation" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="jsv-url list-margin-control">
+												<div class="jsv-url-tittle">
+													JSV URL：
+												</div>
+												<div class="jsv-url-boxandimg">
+													<div class="jsv-url-textbox">
+															<input type="text" name="jsv-url" id="jsv-url" value="" placeholder="单行输入"/>
+													
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="binding list-margin-control">
+												<div class="binding-tittle">
+													Binding：
+												</div>
+												<div class="binding-boxandimg">
+													<div class="binding-textbox">
+														<input type="text" name="binding" id="binding" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="advanced-setting-right">
+											<div class="verify-mode list-margin-control">
+												<div class="verify-mode-tittle">
+													Verify Mode：
+												</div>
+												<div class="verify-mode-select">
+													<select name="verify-mode-select-list">
+														<option value="">Skip</option>
+														<option value="">wrong</option>
+														<option value="">error</option>
+														<option value="">just verify</option>
+														<option value="">Poke</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="mail list-margin-control">
+												<div class="mail-tittle">
+													Mail:
+												</div>
+												<div class="mail-checkbox">
+													<div class="checkbox-top">
+														<div class="start-of-job">
+															<input type="checkbox" name="start-of-job" id="start-of-job" value="" /> Start Of Job
+														</div>
+														<div class="end-of-job">
+															<input type="checkbox" name="end-of-job" id="end-of-job" value="" /> End Of Job
+														</div>
+													</div>
+													<div class="checkbox-bottom">
+														<div class="abort-of-job">
+															<input type="checkbox" name="checkbox-bottom" id="checkbox-bottom" value="" /> Abort Of Job
+														</div>
+														<div class="suspend-of-job">
+															<input type="checkbox" name="suspend-of-job" id="suspend-of-job" value="" /> Suspend Of Job
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="mail-to list-margin-control">
+												<div class="mail-to-tittle">
+													Mail to：
+												</div>
+												<div class="mail-to-boxandimg">
+													<div class="mail-to-textbox">
+														<input type="text" name="mail-to" id="mail-to" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="hard-queue-list list-margin-control">
+												<div class="hard-queue-list-tittle">
+													Hard Queue List：
+												</div>
+												<div class="hard-queue-list-boxandimg">
+													<div class="hard-queue-list-textbox">
+														<input type="text" name="hard-queue-list" id="hard-queue-list" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="soft-queue-list list-margin-control">
+												<div class="soft-queue-list-tittle">
+													Soft Queue List：
+												</div>
+												<div class="soft-queue-list-boxandimg">
+													<div class="soft-queue-list-textbox">
+														<input type="text" name="soft-queue-list" id="soft-queue-list" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="master-queue-list list-margin-control">
+												<div class="master-queue-list-tittle">
+													Master Queue List：
+												</div>
+												<div class="master-queue-list-boxandimg">
+													<div class="master-queue-list-textbox">
+														<input type="text" name="master-queue-list" id="master-queue-list" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="job-dependecies list-margin-control">
+												<div class="job-dependecies-tittle">
+													Job Dependecies：
+												</div>
+												<div class="job-dependecies-boxandimg">
+													<div class="job-dependecies-textbox">
+														<input type="text" name="job-dependecies" id="job-dependecies" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+											
+											<div class="hold-array-dependecies list-margin-control">
+												<div class="hold-array-dependecies-tittle">
+													Hold Array Dependecies：
+												</div>
+												<div class="hold-array-dependecies-boxandimg">
+													<div class="hold-array-dependecies-textbox">
+														<input type="text" name="hold-array-dependecies" id="hold-array-dependecies" value="" placeholder="单行输入"/>
+													</div>
+													<div class="save-iron">
+														<img src="imgs/iron-save.png"/>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

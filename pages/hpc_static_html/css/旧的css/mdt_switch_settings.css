@@ -1,0 +1,136 @@
+.right{
+	display: flex;
+	justify-content: center;
+}
+table {
+	border-collapse: collapse;
+}
+.mdt-setting{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 100px;
+	color: #616366;
+}
+.mdt-setting-tittle{
+	width: 100px;
+    padding: 10px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #6286e0;
+}
+
+.mount-directory-title{
+	margin-right: 20px;
+ }
+.mount-directory{
+	display: flex;
+	align-items: center;
+	margin: 0 10px 20px 0;
+}
+
+.mdt-setting td {
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid lightgray;
+}
+
+.from-probe{
+	text-align: center;
+	padding: 4px;
+	height: 20px;
+	width: 60px;
+	margin-left: 16px;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	color: #616366;
+}
+.drive{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.from-switch{
+	text-align: center;
+	padding: 4px;
+	height: 20px;
+	width: 40px;
+	margin-left: 10px;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	color: #616366;
+}
+
+.alternate-address td {
+	height: 40px;
+	padding: 4px;
+	text-align: center;
+}
+
+.command-prompt{
+	display: flex;
+	justify-content: center;
+	color: #a6aa9c;
+	font-size: 12px;
+}
+.command-1-outer,
+.command-2-outer{
+	margin: 20px 240px 0 100px;
+}
+
+
+
+/*重写select*/
+
+/*select高度宽度*/
+.network-card .sod_select{
+	padding: 10px 10px;
+	width: 200px;
+	border: none;
+	background: none;
+	text-align: center;
+}
+.drive .sod_select{
+	padding: 10px 10px;
+	width: 100px;
+	border: none;
+	background: none;
+	text-align: center;
+}
+/*阴影*/
+.network-card .sod_select:hover,
+.drive .sod_select:hover{
+	background: none;
+	box-shadow:none;
+}
+.network-card .sod_select.focus,
+.drive .sod_select.focus{
+	box-shadow:none;
+	background-image: none;
+	border:none;
+}
+/*位置*/
+	
+/*option高度宽度*/
+.network-card .sod_select .sod_list{
+	width: 200px;
+}
+.drive .sod_select .sod_list{
+	width: 100px;
+}
+/*select箭头位置*/
+.network-card .sod_select:after {
+	top: 12px;
+}
+.drive .sod_select:after{
+	top: 6px;
+}
+
+.network-card .sod_select .sod_list li,
+.drive .sod_select:after{
+	padding: 6px 0px 6px 0px;
+	text-align: center;
+}

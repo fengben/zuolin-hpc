@@ -1,0 +1,4 @@
+  <%:tuid = tuid()%>
+  <%:sqlstr1="insert into person(id,city_id,name,age,company) values(?,?,?,?,?)"%>
+  <%:x=execSQL(:sqlstr1,L(:tuid),1,'阿猫',18,'李大有限公司')%>
+  <%=:x%>

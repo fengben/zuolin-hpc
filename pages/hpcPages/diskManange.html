@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>测试</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="/zoolina-ucha/Scripts/StationJSLib.js"></script>
+		<script type="text/javascript" src="js/vue.min.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" id="ostDisk" v-cloak>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+							OST
+						</th>
+						<th>
+							来源
+						</th>
+						<th>
+							已使用
+						</th>
+						<th>
+							总量
+						</th>
+						<th>
+							读取KB
+						</th>
+						<th>
+							写入KB
+						</th>
+						<th>
+							cpu%
+						</th>
+						<th>
+							内存%
+						</th>
+						<th>
+							健康状态
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="success" is="dynamicTr" v-for="diskMessage in diskMessages" :diskmessage="diskMessage">
+						<template slot-scope="slotProps">
+    						{{slotProps.value}}
+  						</template>
+					</tr>
+				</tbody>
+			</table>
+			<p>first:{{test}}</p>
+		</div>
+	</div>
+</div>
+	</body>
+	<script type="text/javascript" src="js/diskInfo.js" ></script>
+</html>

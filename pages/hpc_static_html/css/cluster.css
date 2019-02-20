@@ -1,0 +1,63 @@
+.right-header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 60px 10px 0;
+}
+.right-header img{
+	width: 70%;
+}
+.right-header div{
+	margin-left: 20px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+.content-table {
+	display: flex;
+	justify-content: center;
+	color: #616366;
+}
+
+
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+
+.jobcontrol-table th {
+
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid lightgray;
+}
+
+.status{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.status-dot{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	
+}
+.status-dot-health{
+	background-color: #aef4a4;
+}
+/* 下拉列表 */
+.sod_select{
+	width: 140px;
+}
+.sod_select .sod_list{
+	width: 140px;
+}

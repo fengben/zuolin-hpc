@@ -1,0 +1,68 @@
+<head>
+    <script type="text/javascript" src="/Scripts/StationJSLib.js"></script>
+</head>
+<button onclick="get_statue()">aaa</button>
+<button onclick="get_version()">bbb</button>
+<button onclick="phrase()">ccc</button>
+
+<div>
+
+</div>
+<script>
+    var status_arr = null;
+    var version = null;
+    var json_data=null;
+    function phrase() {
+        // alert(status_arr.length);
+        // alert(version);
+        tmparr = new Array();
+        for (var i=1;i<status_arr.length;i++){
+            dic={};
+            dic['version']=version;
+            dic['statue'] = status_arr[i][1];
+            dic['name'] = status_arr[i][0];
+            tmparr.push(dic);
+        }
+        json_data= {'data':tmparr};
+        // alert(json_data['data'][0]['name']);
+        return json_data;
+
+    }
+
+    function get_statue() {
+        var obj = new Array();
+        var praseResult = function () {
+            // alert(obj[0]);
+            status_arr=clean_statue(obj[0]);
+            get_version();
+        };
+        getFromWS("HPC/getStatus.template", "", obj, praseResult);
+    }
+
+    function get_version() {
+        var obj = new Array();
+        var praseResult = function () {
+            // alert(obj[0]);
+            version=clean_version(obj[0]);
+            json_data=phrase();
+        };
+        getFromWS("HPC/getVersion.template", "", obj, praseResult);
+    }
+
+    function clean_statue(data) {
+        // alert(data.length);
+        claeaned = data.split("\n");
+        // alert(claeaned[0]);
+        for (var i = 0; i < claeaned.length; i++) {
+            claeaned[i] = claeaned[i].split(/[ ]+/);
+        }
+        // alert(claeaned);
+        return claeaned;
+    }
+
+    function clean_version(data) {
+        data = data.split('\n');
+        // alert(data[0]);
+        return data[0];
+    }
+</script>

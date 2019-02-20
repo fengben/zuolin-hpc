@@ -1,0 +1,12 @@
+<%
+debugMsg("**************111***********")
+///显示提交主机 /opt/ge2011/bin/linux-x64/qconf -ss
+:diskBaseInfo=sshExec("192.168.10.214","root","Wuda_123","lctl get_param lov.*-mdtlov.target_obd")
+///:sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -ss")
+:sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64/qconf -ss")
+///:sub_host = sshExec("192.168.10.235", "appwork", "Wuda_123", "/opt/ge2011/bin/linux-x64//a.sh")
+
+debugMsg("**************"#"=="#:diskBaseInfo)
+debugMsg("**************"#"=="#:sub_host)
+Exit:sub_host
+%>

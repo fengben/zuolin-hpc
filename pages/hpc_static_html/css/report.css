@@ -1,0 +1,76 @@
+.right-header{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 60px 10px 0;
+}
+img{
+	width: 70%;
+}
+.node-text{
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	padding: 4px;
+}
+.right-header-left,
+.right-header-right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-header-item-outer{
+	display: flex;
+	margin-left: 20px;
+}
+.search-input{
+	margin: 0 20px 0 20px;
+}
+
+/* 下拉列表 */
+.sod_select{
+	width: 140px;
+}
+.sod_select .sod_list{
+	width: 140px;
+}
+
+.text{
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	padding: 4px;
+	margin-left: 20px;
+	width: 80px;
+	text-align: center;
+}
+.text-choose{
+	background-color: #66AFE9;
+	color: white;
+	border: 1px solid #66AFE9;
+}
+.resource-top,
+.work-top,
+.department-top,
+.project-top{
+	margin: 40px 0 40px 60px;
+	display: flex;
+}
+.resource-down,
+.work-down,
+.department-down,
+.project-down{
+	display: flex;
+}
+.time{
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	padding: 4px;
+	margin: 0 0 20px 80px;
+	width: 200px;
+	text-align: center;
+}
+.resource-chart{
+	margin: -30px 0 0 40px;
+}
+.project-chart{
+	margin: -30px 0 60px 50px;
+}

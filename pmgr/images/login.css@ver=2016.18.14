@@ -1,0 +1,44 @@
+﻿html{ background:url(login_copy.png) top left no-repeat;}
+A:link{text-decoration:none;}
+a {color:#333333
+}
+body{/*background:url(login_bg.png) top left repeat-x;*/ padding:0; margin:0; font-size:12px;font-family: Microsoft YaHei;}
+form{ margin:0; padding:0; text-align:center}
+.header { background:url(login_top_bg.png) top center no-repeat; width:1920px; height:105px}
+.main{ width:850px ; margin:20px auto; }
+.main h2 {font-size:30px; color:#a0a0a0;padding:0;margin:0;font-weight: 100;  }
+.main h1 { font-size:48px; color:#333333;padding:0;margin:0;font-weight: 100;  }
+.left{ width:400px;margin:50px 20px 0 0;  float:left; /*background:url(login_split.png) center right no-repeat*/}
+.right{ float:left/*;background:url(login_header.png) 47px 30px no-repeat*/;margin-top:60px;  text-align:left; width:280px}
+.right tr td input{height:40px;padding: 0px;    border-radius: 3px;padding-left:15px;}
+.right tr td{padding:0px;}
+.right td select{ width:140px; height:21px;}
+.right td input{ border:solid 1px #ccc; width:270px; /*font-family:Arial; font-weight:bold;font-size:12px;*/}
+.right td button{ /*background:url(loginbtn.png); width:61px; height:25px;*/ border:none; cursor:pointer; margin-left:8px}
+.right td  #btn{ background:#3577dc; width:287px; height:45px; border:none; cursor:pointer; margin-left:8px;color:#fff;font-size:20px;    border-radius: 5px;font-family: Microsoft YaHei; }
+/*.right td button.hover{ background:url(loginbtn_hover.png);}*/
+.clear{ clear:both}
+.button{ width:64px; height:22px; padding-top:2px; background:url(btn.png);  border:solid 1px #bcbcbc; cursor:pointer; outline:none;}
+.slt{ position:relative; border:solid 1px #ccc; height:40px; line-height:40px;  cursor:default;    border-radius: 3px; }
+.slt span{ display:inline-block; overflow:hidden;padding-left:15px;font-size:14px; }
+.slt img{ position:absolute; right:13px; top:10px}
+.sltlist{ padding:0; margin:0; border:solid 1px #ccc; position:absolute; background:#fff; max-height:200px;min-height:30px; overflow-y:auto; overflow-x:hidden;}
+.sltlist li{ list-style:none; line-height:30px; color:#666 ; overflow:hidden;  min-width:280px;_width:280px;    padding-left: 5px;}
+.sltlist .li { cursor:default; color:#000}
+  #valirow td {float:left}
+
+#login_Pc table .fr label { margin-top:2px; margin-left:-2px;height:15px; clear:both;}
+
+/*右下角（到期提醒）弹窗css*/
+#logintips { border-radius:4px; background:#fff; box-shadow:#ccc 0px 0px 15px; width:300px;height:220px; position:absolute; right:10px; bottom:10px; overflow:hidden; border:1px solid #e0e0e0; }
+#logintips h3 { background:#f95555; color:#fff;  text-align:left; line-height:200%; margin:0; padding:0; padding-left:10px; width:100%; float:left; font-size:14px; height:28px;} 
+#closebtn { cursor:pointer;}
+#logintips h3 span { position:absolute; top:7px; right:7px;}
+#logintips .login_text { clear:both; text-align:left; width:90%; margin:0 auto; margin-top:36px;text-align:justify; font-size:14px;padding:0;border-bottom:1px dashed #c6c5c4;padding-bottom:10px;}
+#logintips .login_text {*margin-top:10px;}
+#logintips .login_textT { clear:both; text-align:left; width:90%; margin:0 auto; text-align:justify; font-size:14px; padding:0; margin-top:8px;background:url(phone_ico.png) left no-repeat;padding-left:22px;margin-left:16px;}
+#logintips .login_text b { color:#f95555;}
+#logintips .login_textT b { color:#f95555;}
+#logintips .phone_NumberO span { color:#ff6d01;font-style:italic;}
+#logintips .phone_NumberT span { color:#2e95fe;font-style:italic;}
+#logintips .contus { clear:both; width:90%; margin:0 auto; text-align:right; font-size:12px;}

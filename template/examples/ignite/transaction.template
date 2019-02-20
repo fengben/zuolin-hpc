@@ -1,0 +1,13 @@
+<%:tuid = tuid()%>
+<%:sql1 = merge("insert into Person(id,city_id,name,age,company) values(?,?,?,?,?)",L(:tuid) ,4,'何斌大',98,'木材加工厂')%>
+<%:tuid = tuid()%>
+<%:sql2 = merge("insert into City(id,name) values(?,?)",L(:tuid),'南京')%>
+<%:r=execTransaction(:sql1,:sql2)%>
+<%:sql3 = "select name from City where id > ?"%>
+<%changeRecordSet(:sql3,-1L)%>
+<%Repeat%>
+    <%=name%><br>
+<%EndRepeat%>
+<%:sql1 = merge("delete from Person where name=?",'何斌大')%>
+<%:sql2 = merge("delete from City where name=?",'南京')%>
+<%=execTransaction(:sql1,:sql2)%>

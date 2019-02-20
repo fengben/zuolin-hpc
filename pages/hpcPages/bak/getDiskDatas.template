@@ -1,0 +1,10 @@
+
+///获取对应的磁盘OSt、mdt的信息
+<%:diskBaseInfo=sshExec("192.168.10.214","root","Wuda_123","lctl get_param lov.*-mdtlov.target_obd")%>
+///<%:diskBaseInfo=sshExec("192.168.10.230","root","Wuda_123","lfs check servers")%>
+///得到对应磁盘的ip地址
+<%:ipForOst=sshExec("192.168.10.230","root","Wuda_123","lctl get_param osc.*.ost_conn_uuid")%>
+///获取对应磁盘的使用情况
+<%:ostStorageInfo=sshExec("192.168.10.230","root","Wuda_123","lfs df -h"）%>
+<%:resultData=:diskBaseInfo#"$_@_$"#:ipForOst#"$_@_$"#:ostStorageInfo%>
+<%=:resultData%>

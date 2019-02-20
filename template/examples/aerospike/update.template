@@ -1,0 +1,3 @@
+  <%:time=getCurrentTime@ZoolinaTemplateApi()%>
+    <%:aqlStr="insert into demo_iss_backup.person(PK,id,city_id,name,age,company) values(5,5,4,'张三5',58," + S(:time) +")"%>
+    <%=execAerospike(:aqlStr)%> 

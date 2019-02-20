@@ -1,0 +1,8 @@
+<!-- databaseName=demo_iss_backup -->
+此例子演示了backspace指令的用法<br>
+<%:i=1%>(
+<%While :i< 10%>
+    <%=:i%>,
+    <%:i=:i+1%>
+<%EndWhile%><%Backspace%>)
+

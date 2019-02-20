@@ -1,0 +1,5 @@
+///通过ip地址获取对应的健康状况
+<%:isHealthy=sshExec(:ip,"root","Wuda_123","lctl get_param obdfilter.*.degraded")%>
+<%:isHealthy=replace(:isHealthy,"\n","@"%>
+<%:resultData=:index#"$_@_$"#:isHealthy%>
+<%=:resultData%>

@@ -1,0 +1,961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="keywords" content="一体化网络办公系统" />
+    <meta name="description" content="111" />
+    <meta name="author" content="1111" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        华中科技大学（武汉樱顶网络安全技术中心）</title>
+    <link href="images/login.css?ver=2016.18.14" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .headert {
+            height: 18px;
+            border-bottom: 1px solid #e2e2e2;
+            position: relative;
+            font-family: "Microsoft Yahei";
+        }
+
+        .headert .switch {
+            height: 45px;
+            position: absolute;
+            left: 37px;
+            bottom: 0;
+            font-size: 16px;
+        }
+
+        .headert .switch #switch_qlogin {
+            margin-right: 85px;
+        }
+
+        .headert .switch .switch_btn {
+            color: #999;
+            display: inline-block;
+            height: 45px;
+            line-height: 45px;
+            outline: none;
+            *hide-focus: expression(this.hideFocus=true);
+        }
+
+        .headert .switch .switch_btn_focus {
+            color: #76bdff;
+            display: inline-block;
+            height: 45px;
+            line-height: 45px;
+            outline: none;
+            *hide-focus: expression(this.hideFocus=true);
+        }
+        /*.headert .switch .img2{background: url('images/yiphonehover.png') no-repeat; }
+          .headert .switch .img1{background: url('images/yipeoplehover.png') no-repeat;}*/
+        /*.headert .switch .img4{background: url('images/yiphone.png') no-repeat;}
+          .headert .switch .img3{background: url('images/yiphonehover.png') no-repeat;}*/
+        /*.headert .switch .switch_btn_focus :hover img2{background: url('images/yipeople.png') no-repeat;display:block}*/
+        .headert .switch .switch_btn:hover {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .headert .switch .switch_btn_focus:hover {
+            text-decoration: none;
+        }
+
+        #switch_bottom {
+            position: absolute;
+            bottom: -1px;
+            _bottom: -2px;
+            border-bottom: 3px solid #76bdff;
+        }
+
+        .cl {
+            clear: both;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .i_pc {
+            background-image: url('images/pc_ico.png');
+            cursor: pointer;
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            left: 700px;
+            top: 134px;
+        }
+
+        .i_wx {
+            background-image: url('images/qrcode_ico.png');
+            cursor: pointer;
+            width: 52px;
+            height: 52px;
+            position: absolute;
+            left: 700px;
+            top: 134px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #btn:hover,#btnFaster:hover {
+            opacity: 0.7;
+        }
+
+        #qrcode_scan {
+            background: url('images/qrcode_scan.png') no-repeat;
+            height: 38px;
+            width: 160px;
+            padding-left: 50px;
+            padding-top: 10px;
+            font-size: 12px;
+            font-family: Microsoft YaHei;
+            margin-left: 45px;
+        }
+
+        #login_Pc {
+            /*clear: both;*/
+            /*text-align: center;*/
+        }
+
+        #btn,#btnFaster {
+            background: #3577dc;
+            width: 287px;
+            height: 45px;
+            border: none;
+            cursor: pointer;
+            margin-left: 8px;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 5px;
+            font-family: Microsoft YaHei;
+        }
+
+        #login_QRCode {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        #logStatusText {
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            color: #ff6a00;
+        }
+        .margb3{margin-bottom:2px;}
+        .header {
+            margin: 0 auto;
+        }
+
+        .auto-style1 {
+            width: 58px;
+            height: 43px;
+        }
+
+        .auto-style2 {
+            height: 43px;
+        }
+        .peopeleImg{background: url('images/yipe.png') no-repeat center left 12px !important;}
+        .passImg{background: url('images/yiyaoshi.png') no-repeat center left 12px !important;}
+        .iphoneImg{background: url('images/yiphone.png') no-repeat center left 12px !important;}
+        .dongImg{background: url('images/yidong.png') no-repeat center left 12px !important;}
+        .popMsgInfo {
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center;
+            padding: 20px 40px 20px 40px;
+            background-color: #eeeeee;
+            filter: alpha(opacity=90); /*IE*/
+            -moz-opacity: 0.9; /*MOZ , FF*/
+            opacity: 0.9; /*CSS3, FF1.5*/
+            border-radius: 20px;
+            display: block;
+            position: absolute;
+            z-index: 9999;
+            margin-left: 40%;
+            margin-top: 20%;
+        }
+
+        .popMsgInfo span {
+            color: red;
+        }
+    </style>
+    <script src="JS/jquery1x.min.js?ver=2016.18.14" type="text/javascript"></script>
+    <script src="JS/json.js?ver=2016.18.14" type="text/javascript"></script>
+    <script src="JS/eqccd.js?ver=2016.18.14" type="text/javascript"></script>
+    <script src="Js/jquery.cookie.js?ver=2016.18.14" type="text/javascript"></script>
+
+</head>
+<body>
+
+<form method="post" action="http://om1.24om.com/yindinge/login.aspx?cmd=logout" id="fmLogin" style="text-align: center">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NzUxMDExNjMPFgIeBXBvcHVwZBYCAgEPZBYgAgEPFgIeBFRleHQFEuivrSZuYnNwOyZuYnNwO+iogGQCAg8WAh8BBQznroDkvZPkuK3mlodkAgUPFgIfAQUM566A5L2T5Lit5paHZAIGDxYCHwEFDOe5gemrlOS4reaWh2QCBw8WAh8BBQdFbmdsaXNoZAIIDxYCHwEFEuacuiZuYnNwOyZuYnNwO+aehGQCCQ8WAh8BBSTmrabmsYnlpKflrablm73lrrbnvZHnu5zlronlhajlrabpmaJkAgwPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYCZg8VAgE3JOatpuaxieWkp+WtpuWbveWutue9kee7nOWuieWFqOWtpumZomQCDQ8WAh8BBRLluJAmbmJzcDsmbmJzcDvlj7dkAhAPFgIfAQUS5a+GJm5ic3A7Jm5ic3A756CBZAIVD2QWAmYPZBYCAgEPFgIfAQUJ6aqM6K+B56CBZAIWDxYCHwEFBueZu+W9lWQCFw8WAh8BBQbnmbvlvZVkAhgPFgIfAQUG5YWz6ZetZAIZDxYCHwEFBuW4ruWKqWQCIw8PFgIeCEltYWdlVXJsBUtDb21tb24vQ2hhcnRzL0xvZ2luUVJDb2RlLmFzaHg/dXNlcktleT1kM2JkODBkOC1mNWYzLTQyOGItYTE2Zi1iYTdjMTkwOGM2NmVkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUUbG9naW5fZm9ybV9zYXZlc3RhdGW2Qu77OIjzDoKQXlN8uKJqbSsy/UwJerJj9Nrfk/NwRQ==" />
+    </div>
+
+    <script type="text/javascript">
+      <!--
+      var theForm = document.forms['fmLogin'];
+      if (!theForm) {
+        theForm = document.fmLogin;
+      }
+      function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+        }
+      }
+      // -->
+    </script>
+
+
+    <script src="/yindinge/WebResource.axd?d=zS9_IXfSZZ6NnULMZVsmc7RkSkZAYOqmd47A3L1M0IAUw8LihCW4LWKIMfnUPjMR-Lcd99VFgAGCvU3leCZtf9BInWQTXKLqwTSjCBHtqZo1&amp;t=635313418648611392" type="text/javascript"></script>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+        <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFgLx8rvNCgKGgY3cCgKzjYycCAKG94qAAQLGjayKDgKR/OoeAqnAr84GAuLjr8UKAoiSn9YNAr3ApbsMArzJnrMPAvO957IBAu6oncEGAsvP9E4C0InCqgoC9ff+iAgCgfrzjQ4Ci/vSsg4Cl9urmggC77iC6QMCs9C76AsCvcOmJmgMdILIZrWU+PoGk/HW51/6wzMnUtx03QGTtJAJB9FV" />
+    </div>
+    <div class="header">
+    </div>
+    <div class="popMsgInfo" style="display: none"></div>
+    <div class="main">
+        <h2>欢迎登录</h2>
+        <h1>武汉大学</h1>
+        <div class="left">
+            <img src="images/login_user_bg.png" title="" alt="" />
+        </div>
+        <!--<div id="tab_LoginSel" class="i_wx"></div>-->
+        <div class="right">
+            <input type="hidden" name="hfRtx" id="hfRtx" />
+            <div id="login_Pc">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="headert">
+                                <div class="switch" id="switch">
+                                    <a class="switch_btn_focus" id="switch_qlogin" href="javascript:void(0);" tabindex="7"><span style="margin-bottom: 10px;">
+                                            <img id="img_qlogin" src="images/yipeoplehover.png" title="" alt="" /></span><span style="margin-left: 5px;">账号登录</span></a>
+                                    <!--<a class="switch_btn" id="switch_login" href="javascript:void(0);" tabindex="8" style="margin-left: -25px;">-->
+                                        <!--<img id="img_login" src="images/yiphone.png" title="" alt="" /><span style="margin-left: 5px; padding-bottom: 5px;">短信登录</span></a>-->
+                                    <div class="switch_bottom" id="switch_bottom" style="position: absolute; width: 140px; left: -36px;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td><div style="height:20px"></div></td></tr>
+                    <tr>
+                        <td style="display: none">
+                            语&nbsp;&nbsp;言：
+                        </td>
+                        <td>
+                            <div class="slt" onclick="chg(this)">
+                                    <span id="spanLan">
+                                        简体中文</span>
+                                <input name="hidLan" type="hidden" id="hidLan" value="0" />
+                                <input name="hidLanTxt" type="hidden" id="hidLanTxt" value="简体中文" />
+                                <img src="images/exp_1.png" alt="" />
+                            </div>
+                            <ul class="sltlist" style="display: none; z-index: 10" id="ul1">
+                                <li class="li" val="0">
+                                    简体中文</li>
+                                <li class="li" val="2">
+                                    繁體中文</li>
+                                <li class="" val="1">
+                                    English</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: none">
+                            机&nbsp;&nbsp;构：
+                        </td>
+                        <td>
+                            <div class="slt" onclick="chg(this)">
+                                    <span id="spanOrg" style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 225px">
+                                        武汉大学国家网络安全学院</span>
+                                <input name="hidOrg" type="hidden" id="hidOrg" value="7" />
+                                <input name="hidOrgTxt" type="hidden" id="hidOrgTxt" value="武汉大学国家网络安全学院" />
+                                <img src="images/exp_1.png" alt="" />
+                            </div>
+                            <ul class="sltlist" style="display: none; z-index: 9" id="ul2">
+
+                                <li class="li" val="7">
+                                    武汉大学国家网络安全学院</li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: none">
+                            帐&nbsp;&nbsp;号：
+                        </td>
+                        <td id="rowLoginName">
+                            <input name="txtLoginName" type="text" maxlength="20" id="txtLoginName" class="peopeleImg" placeholder="账号/手机" style="line-height: 40px; font-family: 'Microsoft YaHei'; text-indent: 20px;" />
+                        </td>
+                        <td id="rowLoginPhone" style="display: none">
+                            <input name="txtLoginPhone" type="text" maxlength="11" id="txtLoginPhone" class="iphoneImg" placeholder="手机" onkeypress="if (event.keyCode&lt;48 || event.keyCode>57) event.returnValue=false;" style="line-height:40px; font-family:'Microsoft YaHei'; text-indent: 20px; ime-mode:disabled" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: none">
+                            密&nbsp;&nbsp;码：
+                        </td>
+                        <td id="rowLoginPwd">
+                            <input type="hidden" name="hfUserPassword" id="hfUserPassword" />
+                            <input name="txtUserPassword" type="password" maxlength="20" id="txtUserPassword" class="passImg" placeholder="密码" style="line-height: 40px; font-family: 'Microsoft YaHei'; text-indent: 20px" />
+                        </td>
+                        <td id="rowLoginVerify" style="display: none">
+                            <input name="txtLoginVerify" type="text" maxlength="20" id="txtLoginVerify" class="dongImg" placeholder="动态密码" style="line-height: 40px; font-family: 'Microsoft YaHei'; width: 50%; text-indent: 20px" />
+                            <input name="btnGetVerify" type="button" id="btnGetVerify" value="获取动态密码" onclick="getVerify()" style="line-height: 40px; font-family: &#39;Microsoft YaHei&#39;; width: 42%; background: #eee; color: #3d3d3d;padding-left:0px;" />
+                        </td>
+                    </tr>
+
+                    <tr id="valirow" style="display: none;">
+                        <td style="margin-top: 10px; font-size: 14px" class="auto-style1">
+                            验证码：
+                        </td>
+                        <td class="auto-style2">
+                            <table cellpadding="0" border="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <input name="txtValidateNumber" type="text" maxlength="4" id="txtValidateNumber" style="height:35px;width:80px;border-radius: 0px;" /></td>
+                                    <td>&nbsp;<img id="ImgValidate" style="height:36px;margin-top: 1px;" />
+                                    </td>
+                                    <td style="margin-top: 19px">&nbsp;
+                                        <a href="javascript:;" onclick="DoReGet()">看不清楚</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit" class="hover" id="btn" style="margin: 0" onclick="return chkForm();">
+                                登录</button>
+                            <button type="button" class="hover" id="btnFaster" style="margin: 0;display: none" onclick="return ajaxLoginFaster();">
+                                登录</button>
+                        </td>
+                        <td align="right" style="display: none">
+                            <button id="Button1" type="button" onclick="window.open('', '_self');window.close();">
+                                关闭</button>
+                            <button id="Button2" type="button" onclick="OpenHelp()">
+                                帮助</button>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="fr" id="colSaveState" style="width:40%;float:left;">
+                            <label for="login_form_savestate" class="W_fl W_label" title="建议在网吧或公共电脑上取消该选项。" action-data="content=建议在网吧或公共电脑上取消该选项。" action-type="customTip">
+                                <input name="login_form_savestate" type="checkbox" id="login_form_savestate" node-type="savestate" tabindex="5" class="W_checkbox" style="height: auto; border: none; vertical-align: middle; margin-top: -1px; width: 15px;" />
+                                <span class="S_txt2">记住我</span>
+
+                            </label>
+
+                        </td>
+                        <td class="fr" style="float:right;">
+                            <a href="javascript:;" onclick="onRegClick()">注册个人账号</a>
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="hfShowQRCode" id="hfShowQRCode" value="0" />
+                <input type="hidden" name="txtErrTime" id="txtErrTime" value="0" />
+                <input type="hidden" name="sysErrTime" id="sysErrTime" value="5" />
+                <input type="hidden" name="txtKey" id="txtKey" />
+                <input type="hidden" name="hidLockTime" id="hidLockTime" value="0" />
+                <input type="hidden" name="hfUserGuid" id="hfUserGuid" value="d3bd80d8-f5f3-428b-a16f-ba7c1908c66e" />
+                <input type="hidden" name="hfLoginType" id="hfLoginType" value="0" />
+                <input type="hidden" name="hidCount" id="hidCount" value="120" />
+            </div>
+
+            <div id="login_Wx" style="display: none;">
+                <div id="login_QRCode">
+                    <img id="imgQRCode" src="Common/Charts/LoginQRCode.ashx?userKey=d3bd80d8-f5f3-428b-a16f-ba7c1908c66e" />
+                </div>
+                <div id="qrcode_scan">微信/全程云办公APP扫一扫</div>
+                <div id="logStatusText"></div>
+                <span id="logStatus" style="display: none"></span>
+            </div>
+
+        </div>
+        <br />
+
+    </div>
+
+    <br />
+    <div class="footer clear" style="bottom: 0%; width: 100%; z-index: 2; position: absolute; left: 0px;">
+
+    </div>
+    <script type="text/javascript">
+
+      var qrloginInterval = 1;
+      var showvalirow = false;
+      var valirow = $('#valirow');
+      var hfLoginType = $("#hfLoginType");
+      var btnGetVerify = $("#btnGetVerify");
+      var hidCount = $("#hidCount");
+      var hidOrg = $("#hidOrg");
+      var constTimerInterval = 120;
+
+      $(function () {
+
+        if ('0' == '2') {
+          loadUkey2k();
+        }
+
+        $('#tab_LoginSel').click(function () {
+          showLogin(qrloginInterval);
+        });
+
+        if (document.getElementById("logintips")) {
+          var lastRenewalTipsTime = jQuery.cookie("lastRenewalTipsTime");
+          var nowTime = "09-11-2018";
+          if (!lastRenewalTipsTime || typeof (lastRenewalTipsTime) === 'undefined' || lastRenewalTipsTime == null || lastRenewalTipsTime == "" || parseInt(Math.abs((new Date(nowTime)) - (new Date(lastRenewalTipsTime))) / 1000 / 60 / 60 / 24) > 1) {
+            jQuery("#logintips").fadeIn(1000);
+          }
+
+          $('#closebtn').click(function () {
+            jQuery.cookie("lastRenewalTipsTime", "09-11-2018");
+            jQuery("#logintips").fadeOut(500);
+          });
+        }
+
+        $("#txtLoginName").change(function () {
+          var rememberName = $(this).attr("rememberName");
+          var rememberPwd = $("#hfUserPassword").val();
+          if (rememberName != "" && rememberPwd != "" && $(this).val() == rememberName) {
+            $("#txtUserPassword").val(rememberPwd);
+          }
+          else {
+            $("#txtUserPassword").val("");
+          }
+        });
+
+        $("#txtUserPassword").val($("#hfUserPassword").val());
+        showLogin($("#hfShowQRCode").val() == "0" ? "1" : "0");
+
+        $("#hidCount").val(constTimerInterval);
+        $('#switch_qlogin').click(function () {
+          $('#switch_login').removeClass("switch_btn_focus").addClass('switch_btn');
+          $('#switch_qlogin').removeClass("switch_btn").addClass('switch_btn_focus');
+          $("#img_qlogin").attr('src', 'images/yipeoplehover.png');
+          $("#img_login").attr('src', 'images/yiphone.png');
+          $('#switch_bottom').animate({ left: '-36px', width: '140px' });
+
+          $('#rowLoginName').css('display', 'block');
+          $('#rowLoginPwd').css('display', 'block');
+          $('#colSaveState').css('display', 'block');
+          if (showvalirow) {
+            $('#valirow').css('display', 'table-row');
+          }
+          $('#rowLoginPhone').css('display', 'none');
+          $('#rowLoginVerify').css('display', 'none');
+
+          $("#btn").css("display", "block");
+          $("#btnFaster").css("display", "none");
+
+          closeTimer();
+          hfLoginType.val("0");
+        });
+        $('#switch_login').click(function () {
+          $('#switch_login').removeClass("switch_btn").addClass('switch_btn_focus');
+          $('#switch_qlogin').removeClass("switch_btn_focus").addClass('switch_btn');
+          $("#img_qlogin").attr('src', 'images/yipeople.png');
+          $("#img_login").attr('src', 'images/yiphonehover.png');
+          $('#switch_bottom').animate({ left: '121px', width: '130px' });
+
+          $('#rowLoginName').css('display', 'none');
+          $('#rowLoginPwd').css('display', 'none');
+          $('#colSaveState').css('display', 'none');
+
+          showvalirow = valirow.css('display') != 'none' ? true : false;
+          if (showvalirow) {
+            valirow.css('display', 'none');
+          }
+
+          $('#rowLoginPhone').css('display', 'block');
+          $('#rowLoginVerify').css('display', 'block');
+
+          $("#btn").css("display", "none");
+          $("#btnFaster").css("display", "block");
+
+          hfLoginType.val("1");
+        });
+
+        hfLoginType.val() == '0' ? $('#switch_qlogin').click() : $('#switch_login').click();
+      });
+
+      function onRegClick() {
+        var enVal = $('#hidLan').val();
+        var orgName = $("#spanOrg").text().trim();
+
+        window.location.href = "sign_up.aspx?ivS=pc&oN=" + escape(orgName) + '&lg=' + (enVal=='1'?'en':'zn');
+      };
+
+      var userGuid = $("#hfUserGuid").val();
+      function showLogin(qrstate) {
+        var tabSelObj = $('#tab_LoginSel');
+        var typeClass = tabSelObj.attr('class');
+        if (qrstate == "1") {
+          tabSelObj.removeClass().addClass("i_wx");
+          $("#login_Pc").show();
+          $("#login_Wx").hide();
+
+          qrloginInterval = 0;
+          $("#hfShowQRCode").val(0);
+        }
+        else {
+          tabSelObj.removeClass().addClass("i_pc");
+          $("#login_Pc").hide();
+          $("#login_Wx").show();
+
+          qrloginInterval = 1;
+          $("#hfShowQRCode").val("1");
+          startRequest();
+        }
+      }
+
+      function startRequest() {
+
+        var txtKey = document.getElementById("txtKey");
+        if ('0' == '0') {
+          try {
+            var obj = new ActiveXObject("EidComClt.EidControl");
+            txtKey.value = obj.UserData;
+          } catch (e) { }
+        }
+        else if ('0' == '2') {
+          try {
+            EqccdUkey2KReadData(txtKey, scanLoginRequest);
+            return;
+          } catch (e) { }
+        }
+
+        scanLoginRequest();
+      }
+
+      var lastErrorTips = "";
+      function scanLoginRequest() {
+        var lan = document.getElementById("hidLan").value;
+        var oid = document.getElementById("hidOrg").value;
+
+        if ($("#logStatus").html() != "1") {
+          $.ajax({
+            type: "POST",
+            async: true,
+            cache: false,
+            url: "Login.aspx?ajax=1",
+            data: {
+              "method": "ScanLogin",
+              "utoken": userGuid,
+              "lan": lan,
+              "oid": oid,
+              "ukey": document.getElementById("txtKey").value,
+              "remember": document.getElementById("login_form_savestate").checked ? 1 : 0
+            },
+            success: function (data) {
+
+              if (data == "") return;
+
+              var jo = JSON.parse(data);
+              if (jo.code == 1 || jo.code == 2) {
+                if (jo.code == 2) {
+                  if (!checkpin(jo.ukey)) {
+                    return false;
+                  } else {
+                    jo = scanAuthLogin(userGuid, jo.uid, lan, oid, document.getElementById("txtKey").value, jo.authcode);
+                  }
+                }
+
+                if (jo == null || jo.code != 1) return;
+
+                $("#logStatus").html("1");
+                $("#qrcode_scan").hide();
+                $("#login_QRCode").hide();
+                $("#logStatusText").html("登录成功！载入中...");
+
+                if (jo.fullscreen) {
+                  window.open(jo.gourl, '_blank', 'status=no,location=no,toolbar=no,directories=no,menubar=no,scrollbars=yes,resizable=yes');
+                  window.opener = 'X';
+                  window.open('', '_parent', '');
+                  window.close();
+                } else {
+                  location.href = jo.gourl;
+                }
+
+                return;
+              }
+              else if (jo.code < 0) {
+
+                if (lastErrorTips != jo.message) {
+                  alert(jo.message);
+                  lastErrorTips = jo.message;
+                }
+              }
+
+              if ($("#hfShowQRCode").val() == "1") {
+                setTimeout("startRequest()", 2000);
+              }
+            },
+            error: function () { }
+          });
+        }
+      }
+
+      function scanAuthLogin(userGuid, uid, lan, oid, ukey, authcode) {
+        var jo = null;
+        $.ajax({
+          type: "POST",
+          async: false,
+          cache: false,
+          url: "Login.aspx?ajax=1",
+          data: {
+            "method": "ScanTokenLogin",
+            "utoken": userGuid,
+            "uid": uid,
+            "lan": lan,
+            "oid": oid,
+            "ukey": ukey,
+            "authtoken": authcode,
+            "remember": document.getElementById("login_form_savestate").checked ? 1 : 0,
+          },
+          success: function (tokendata) {
+            jo = JSON.parse(tokendata);
+          }
+        });
+
+        return jo;
+      }
+
+      var btns = $("button");
+      var loginname = $("#txtLoginName");
+      var loginpwd = $("#txtUserPassword");
+      var sltlist = $(".li");
+      var ul1 = $("#ul1");
+      var ul2 = $("#ul2");
+      sltlist.click(function () {
+        var td = this.parentNode.parentNode;
+        var span = td.getElementsByTagName("span")[0];
+        var ipt = td.getElementsByTagName("input");
+        ipt[0].value = this.getAttribute("val");
+        ipt[1].value = this.innerHTML;
+        span.innerHTML = this.innerHTML;
+        this.parentNode.style.display = "none";
+      });
+      sltlist.mouseover(function () {
+        this.style.backgroundColor = "#f0f0f0";
+      });
+      sltlist.mouseout(function () {
+        this.style.backgroundColor = "#fff";
+      });
+      function chg(o) {
+        var ul = $(o.parentNode.getElementsByTagName("ul")[0]);
+        if (ul.css("display") == "none") {
+          ul1.hide();
+          ul2.hide();
+          ul.show();
+        }
+        else {
+          ul1.hide();
+          ul2.hide();
+          ul.hide();
+        }
+      }
+      $(document.body).click(function (e) {
+        e = e || window.event;
+        var eo = $(e.target || e.srcElement);
+        var css = eo[0].className;
+        var tag = eo[0].tagName.toLowerCase();
+        if (css == "slt" || tag == "span" || tag == "img") return;
+        ul1.hide();
+        ul2.hide();
+      });
+      if (loginname.val().length < 1) {
+        loginname[0].focus();
+      }
+      else {
+        loginpwd[0].focus();
+      }
+
+      function checkpin(p) {
+        var L100 = null;
+        try {
+          L100 = new ActiveXObject("L100_SEC.L100SEC.1");
+        } catch (e) {
+          popMsg('请插入正确的u-key！');
+          return false;
+        }
+        if (L100) {
+          try {
+            L100.Open(0);
+          } catch (e) {
+            popMsg('请插入正确的u-key！');
+            return false;
+          }
+          try {
+            L100.Passwd(2, p);
+            return true;
+          } catch (e) {
+            popMsg('请插入正确的u-key！');
+            return false;
+          }
+          finally {
+            L100.Close();
+          }
+        }
+        else {
+          popMsg('请插入正确的u-key！');
+          return false;
+        }
+      }
+      function popMsg(msgInfo) {
+        var msgInfo;
+        $('.popMsgInfo').html("<span>温馨提示：</span>" + msgInfo);
+        $('.popMsgInfo').fadeIn("fast");
+        $('.popMsgInfo').delay(1000).fadeOut("slow");
+      }
+      function chkForm() {
+
+        if (loginname.val() == "") {
+          popMsg('帐号不能为空');
+          loginname[0].focus();
+          return false;
+        }
+
+        if (loginpwd.val() == "") {
+          popMsg('密码不能为空');
+          loginpwd[0].focus();
+          return false;
+        }
+
+        var validImg = $("#ImgValidate").attr("src");
+        if (validImg != null && validImg.length > 0 && $("#txtValidateNumber").val() == "") {
+          popMsg('验证码不能为空');
+          $("#txtValidateNumber")[0].focus();
+          return false;
+        }
+
+        var txtKey = document.getElementById("txtKey");
+        if ('0' == '0') {
+          try {
+            var obj = new ActiveXObject("EidComClt.EidControl");
+            txtKey.value = obj.UserData;
+          }
+          catch (e) { }
+        }
+        else if ('0' == '1') {
+          var ispass = true;
+          jQuery.ajax({
+            type: "POST",
+            async: false,
+            url: "Login.aspx",
+            data: {
+              ajax: "1",
+              method: "GetUserID",
+              uid: loginname.val()
+            },
+            success: function (r) {
+              if (r == '') return;
+              ispass = checkpin(r);
+              alert(ispass);
+            }
+          });
+
+          return ispass;
+        }
+        else if ('0' == '2') {
+          try {
+            EqccdUkey2KReadData(txtKey, submitForm);
+            return false;
+          } catch (e) { }
+        }
+
+        return true;
+      }
+
+      function submitForm() {
+        document.getElementById("fmLogin").submit();
+      }
+
+      function OpenHelp() {
+        qc.openWindow("help.html", 650, 450, false, true);
+      }
+
+      function DoReGet() {
+        var img = document.getElementById("ImgValidate");
+        img.src = "VerificationCode.aspx?random=" + Math.random();
+      }
+
+      var timerhandle;
+      function getVerify() {
+        btnGetVerify.attr("disabled", "disabled");
+
+        var loginphone = $("#txtLoginPhone");
+        // 验证手机有效性
+        if (!checkMobile(loginphone)) {
+          btnGetVerify.removeAttr("disabled");
+          return false;
+        }
+
+        $.ajax({
+          type: "POST",
+          async: false,
+          cache: false,
+          url: "Login.aspx",
+          data: {
+            ajax: "2",
+            method: "GetVerify",
+            mobile: loginphone.val(),
+            org: hidOrg.val(),
+          },
+          success: function (result) {
+            if (result == null) return;
+            var o = JSON.parse(result);
+            if (o.res == 0) {
+              timerhandle = setInterval(function () {
+                var count = Number(hidCount.val());
+                if (count <= 0) {
+                  closeTimer();
+                }
+                else {
+                  btnGetVerify.val((--count) + "s 后失效");
+                  hidCount.val('' + count);
+                }
+              }, 1000);
+
+            } else {
+              popMsg(o.Msg);
+              btnGetVerify.removeAttr("disabled");
+            }
+          }
+        });
+      }
+
+      function ajaxLoginFaster() {
+
+        //验证输入
+        if (!checkLoginFasterInput()) return false;
+
+        $.ajax({
+          type: "POST",
+          async: false,
+          cache: false,
+          url: "Login.aspx",
+          data: {
+            ajax: "2",
+            method: "UserLoginFaster",
+            lan: $("#hidLan").val(),
+            mobile: $("#txtLoginPhone").val(),
+            org: hidOrg.val(),
+            pwd: $("#txtLoginVerify").val(),
+            ukey: $("#txtKey").val(),
+            remember: document.getElementById("login_form_savestate").checked ? 1 : 0,
+            curcount: $("#hidCount").val(),
+          },
+          success: function (data) {
+
+            if (data == null) return;
+            var jo = JSON.parse(data);
+            if (jo.res == 0) {
+              closeTimer();
+
+              if (jo.fullscreen) {
+                window.open(jo.gourl, '_blank', 'status=no,location=no,toolbar=no,directories=no,menubar=no,scrollbars=yes,resizable=yes');
+                window.opener = 'X';
+                window.open('', '_parent', '');
+                window.close();
+              } else {
+                location.href = jo.gourl;
+              }
+
+            } else if (jo.res == 1) {
+              popMsg(jo.Msg);
+            } else {
+              popMsg(jo.Msg);
+
+              $("#txtLoginVerify")[0].focus();
+            }
+          }
+        });
+
+        return false;
+      }
+
+      function checkLoginFasterInput() {
+
+        var loginType = hfLoginType.val();//1:快捷登录 手机 + 短信验证码
+
+        var loginPhone = $("#txtLoginPhone");
+        var loginVerify = $("#txtLoginVerify");
+        // 验证手机有效性
+        if (!checkMobile(loginPhone)) {
+          return false;
+        }
+
+        if (loginVerify.val() == "") {
+          popMsg('密码不能为空');
+          loginVerify[0].focus();
+          return false;
+        }
+
+        return true;
+      }
+
+      function closeTimer() {
+        clearInterval(timerhandle);
+        hidCount.val(constTimerInterval);
+        btnGetVerify.val("获取动态密码");
+        btnGetVerify.removeAttr("disabled");
+      }
+
+      function checkMobile(mobile) {
+        if (mobile.val() == "") {
+          popMsg('手机不能为空');
+          mobile[0].focus();
+          return false;
+        }
+
+        if (mobile.val().length != 11) {
+          popMsg('请输入有效的手机号！');
+          mobile[0].focus();
+          return false;
+        }
+
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|17[0-9]{1}|(18[0-9]{1}))+\d{8})$/;
+        if (!myreg.test(mobile.val())) {
+          popMsg('请输入有效的手机号！');
+          mobile[0].focus();
+          return false;
+        }
+
+        return true;
+      }
+
+    </script>
+
+
+    <script type="text/javascript">document.getElementById("txtLoginName").focus();</script>
+    <script type="text/javascript">
+      <!--
+
+      theForm.oldSubmit = theForm.submit;
+      theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+      theForm.oldOnSubmit = theForm.onsubmit;
+      theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+      // -->
+    </script>
+</form>
+</body>
+</html>

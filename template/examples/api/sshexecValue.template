@@ -1,0 +1,7 @@
+///通过ip地址获取对应的健康状况
+<%:isHealthy=sshExec(:ip,"root","Wuda_123","lctl get_param obdfilter.*.degraded")%>
+///通过ip地址获取磁盘的使用情况
+<%:storageInfo=sshExec(:ip,"root","Wuda_123","lfs df -h")%>
+
+<%:isHealthy=replace(:str,"\n","<br>"%>
+<%=:isHealthy%>

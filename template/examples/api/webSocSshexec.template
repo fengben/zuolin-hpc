@@ -1,0 +1,6 @@
+///动态数据获取命令：collectl -sjmf -oT
+
+<%:str=sshExec("192.168.10.214","appwork","Wuda_123","collectl -sjmf -oT")%>
+///<%debugMsg("current str is:"#:str#"")%>
+<%:str=replace(:str,"\n","<br>"%>
+<%=:str%>

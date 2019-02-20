@@ -1,0 +1,9 @@
+新型的语法允许连续书写脚本语句<br>
+<%
+  :x=5; :y=1
+  If :x+:y>4  
+    ="greater than 4"  
+  Else  
+    ="less than or equal to 4"  
+  EndIf  
+%>

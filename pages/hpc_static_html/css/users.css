@@ -1,0 +1,74 @@
+
+.right-header{
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	margin: 0 0 10px 11%;
+}
+img{
+	width: 70%;
+}
+
+.node-text{
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	padding: 4px;
+}
+.right-header-left,
+.right-header-right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-header-item-outer{
+	display: flex;
+	margin-left: 20px;
+}
+.search-input{
+	margin: 0 20px 0 20px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.content-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #616366;
+	padding: 4px;
+}
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 110px;
+	height: 40px;
+	text-align: center;
+}
+.jobcontrol-table img{
+	width: 20%;
+	text-align: center;
+}
+.status{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.status-dot{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	
+}
+.status-dot-health{
+	background-color: #aef4a4;
+}
+/* 下拉列表 */
+.sod_select{
+	width: 140px;
+}
+.sod_select .sod_list{
+	width: 140px;
+}

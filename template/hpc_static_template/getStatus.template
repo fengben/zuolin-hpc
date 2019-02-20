@@ -1,0 +1,49 @@
+<%
+    /// 文 件 名：getStatus.template
+    /// 描    述：获取信息
+    /// 项目名称：lsf
+    /// 作    者：武汉大学国家网络安全学院
+    /// 发布日期：
+    /// 文件版本：
+    /// 注意：本内容仅限于武汉大学，禁止外泄以及用于其他的商业目
+    /// @Copyright: 2018 www.whu.edu.cn. All rights reserved.
+    /// All rights Reserved, Designed By www.whu.edu.cn
+  ///获取名称和状态数据
+  :ipForOst=sshExec("192.168.10.242","root","Wuda_123","lsload")
+  :resultData1=:ipForOst
+
+debugMsg("1111111111="#:resultData1)
+
+  ///处理名称和状态数据
+  split(:resultData1,"\n",&array1)
+
+ /// 获取版本信息数据
+  :res=sshExec("192.168.10.242","root","Wuda_123","lsid")
+  :resultData2=:res
+
+debugMsg("2222222222222="#:resultData2)
+
+  ///处理版本信息数据
+   split(:resultData2,"\n",&array2)
+   :version = :array2[0]
+
+debugMsg("version==========="#:version)
+
+  ///处理数据
+  :dataArray = ""
+  :i = 1
+  ///循环判断
+  While :i < arrayLength(&array1)-1
+    :jsonData = jsonAddItem("", "rawData", S(:array1[:i]))
+    :jsonData = jsonAddItem(:jsonData, "version", S(:version))
+    :dataArray = jsonAddArrayItem(:dataArray, :jsonData)
+    :i = :i + 1
+  EndWhile
+
+ :jsonResult = jsonAddItem("", "data", :dataArray)
+ :jsonResult = jsonAddItem(:jsonResult, "currentPage", :currentPage)
+ :jsonResult = jsonAddItem(:jsonResult, "pageSize", :pageSize)
+ :jsonResult = jsonAddItem(:jsonResult, "start", :start))
+ :jsonResult = jsonAddItem(:jsonResult, "total", :totalItems)
+ =:jsonResult
+%>

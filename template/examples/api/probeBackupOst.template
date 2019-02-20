@@ -1,0 +1,3 @@
+<%:backupOstAddress=sshExec(:ip,"root","Wuda_123","tunefs.lustre /dev/"#:drive）%>
+<%debugMsg("tunefs.lustre /dev/"#:drive)%>
+<%=:backupOstAddress%>

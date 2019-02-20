@@ -1,0 +1,7 @@
+<%=javaExample("zhang 3 & Lee 4")%>
+<br>
+<%=javaRoutine@ZoolinaTemplateApi('hello',S("world"))%>
+<br>
+<%=add@ZoolinaTemplateApi(12,24)%>
+<br>
+<%=getCurrentTime@ZoolinaTemplateApi()%>

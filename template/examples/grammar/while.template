@@ -1,0 +1,13 @@
+<!-- databaseName=demo_iss_backup -->
+此例演示了while循环如何嵌套<br>
+<%:x=1%>
+<%While :x<4%>
+    <%:y=1%>
+    <%While :y<4%>
+        <%=:x+:y%><br>
+        <%:y=:y+1%>
+    <%EndWhile%>
+    <%:x=:x+1%>
+<%EndWhile%>
+
+

@@ -1,0 +1,94 @@
+.right-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 60px 10px 0;
+}
+.right-header img{
+	width: 70%;
+}
+.right-header div{
+	margin-left: 20px;
+}
+
+.node-text{
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	padding: 4px;
+}
+.right-header-left,
+.right-header-right{
+	display: flex;
+}
+
+
+table {
+	border-collapse: collapse;
+}
+
+
+.content-table {
+	display: flex;
+	justify-content: center;
+	color: #616366;
+}
+
+
+
+.jobcontrol-table td {
+	border: 1px solid lightgray;
+	width: 142px;
+	height: 40px;
+	text-align: center;
+}
+.status{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.status-dot{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	
+}
+.status-dot-health{
+	background-color: #aef4a4;
+}
+.status-dot-bad{
+	background-color: #db2d43;
+}
+/* 下拉列表 */
+.sod_select{
+	width: 140px;
+}
+.sod_select .sod_list{
+	width: 140px;
+}
+
+/* 开关 */
+.btn-position-control{
+	display: flex;
+	justify-content: center;
+}
+.btnn-outer {
+    width:46px;
+    height:20px;
+    padding:1px;
+    border-radius: 30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    background-color: #838383;
+    position: relative;
+}
+
+.btnn-outer .btnn {
+    width:20px;
+    height:20px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background-color: #fff;
+    position: absolute;
+}

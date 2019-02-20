@@ -1,0 +1,48 @@
+
+.settings-form{
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	margin-top: 40px;
+}
+.settings-tittle{
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+table {
+	align-self: center;
+	border-collapse: collapse;
+}
+
+.settings-form td {
+	border: 1px solid lightgray;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+}
+.settings-save-pisition{
+	/*align-self: flex-end;*/
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	margin-right: 20%;
+}
+.settings-save{
+	padding: 4px;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	color: #616366;
+}
+
+
+.table-edit-input-text {
+	color: red;
+	padding-left: 10px;
+	width: 100px;
+	height: 40px;
+	background-position: 25px 25px;
+}

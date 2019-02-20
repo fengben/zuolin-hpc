@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>report</title>
+		<link rel="stylesheet" type="text/css" href="iconfont.css">
+		<link href="css/comm.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/selectordie_theme_01.css" rel="stylesheet">
+		<link href="css/report.css" rel="stylesheet">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/selectordie.min.js"></script>
+		<script src="js/comm.js"></script>
+
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="header">
+
+				<div class="header-content">
+					<div class="header-logo">
+						<img src="imgs/wuda-logo.png" class="logo" />
+					</div>
+
+					<div class="header-right">
+						<div class="user">
+							<div class="iron-user">
+								<img src="imgs/iron-user.png" />
+							</div>
+							<div class="user-name">
+								刘工
+							</div>
+						</div>
+						<div class="system-time">
+							10:50 AM
+						</div>
+
+						<div class="question">
+							<img src="imgs/question.png" />
+						</div>
+
+						<div class="refresh">
+							<div class="refresh-iron">
+								<img src="imgs/iron-Refresh.png" />
+							</div>
+							<div class="refresh-select">
+								<select name="time" class="myselect">
+									<option value="jiqunA">不自动刷新</option>
+									<option value="jiqunB">每30秒刷新</option>
+									<option value="jiqunC">每90秒刷新</option>
+								</select>
+							</div>
+						</div>
+						<div class="exit">
+							<img src="imgs/exit.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<div class="left-iterm" id="overview" onclick="location='overview.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-JobControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>概况</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="cluster" onclick="location='cluster.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ClusterConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>集群</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="node" onclick="location='node.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-HostManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>节点</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="work" onclick="location='work.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-ProjectSetting.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>作业</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="line" onclick="location='line.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-QueueControl.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>队列</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="template" onclick="location='template.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-RuleConfiguration.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>模板</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="users" onclick="location='users.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-UserManagement.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>用户</p>
+						</div>
+					</div>
+
+					<div class="left-iterm" id="report" onclick="location='report.html'">
+						<div class="left-iterm-img">
+							<img src="imgs/iron-InformationBrowsing.png" />
+						</div>
+						<div class="left-iterm-font">
+							<p>报告</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="resource">
+						<div class="resource-top">
+							<div class="text-resource text">
+								资源
+							</div>
+							<div class="text-lava text text-choose">
+								集群lava-1
+							</div>
+							<div class="text-lava text">
+								集群lava-2
+							</div>
+						</div>
+						<div class="resource-down">
+							<div class="resource-time-select">
+								<div class="time text-choose">
+									2019-02-01 -> 2019-02-21
+								</div>
+								<div class="time">
+									2019-02-21 -> 2019-03-11
+								</div>
+							</div>
+							<div class="resource-chart">
+								<img src="imgs/chart1.png">
+							</div>
+						</div>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="text-resource text">
+								作业
+							</div>
+							<div class="text-lava text text-choose">
+								集群lava-1
+							</div>
+							<div class="text-lava text">
+								集群lava-2
+							</div>
+						</div>
+						<div class="work-down">
+							<div class="resource-time-select">
+								<div class="time text-choose">
+									2019-02-01 -> 2019-02-21
+								</div>
+								<div class="time">
+									2019-02-21 -> 2019-03-11
+								</div>
+							</div>
+							<div class="resource-chart">
+								<img src="imgs/chart1.png">
+							</div>
+						</div>
+					</div>
+					<div class="department-work">
+						<div class="department-top">
+							<div class="text-resource text">
+								部门作业量
+							</div>
+							<div class="text-lava text text-choose">
+								集群lava-1
+							</div>
+							<div class="text-lava text">
+								集群lava-2
+							</div>
+						</div>
+						<div class="department-down">
+							<div class="resource-time-select">
+								<div class="time text-choose">
+									2019-02-01 -> 2019-02-21
+								</div>
+								<div class="time">
+									2019-02-21 -> 2019-03-11
+								</div>
+							</div>
+							<div class="resource-chart">
+								<img src="imgs/chart2.png">
+							</div>
+						</div>
+					</div>
+					<div class="project-work">
+						<div class="project-top">
+							<div class="text-resource text">
+								项目作业量
+							</div>
+							<div class="text-lava text text-choose">
+								集群lava-1
+							</div>
+							<div class="text-lava text">
+								集群lava-2
+							</div>
+						</div>
+						<div class="project-down">
+							<div class="resource-time-select">
+								<div class="time text-choose">
+									2019-02-01 -> 2019-02-21
+								</div>
+								<div class="time">
+									2019-02-21 -> 2019-03-11
+								</div>
+							</div>
+							<div class="project-chart">
+								<img src="imgs/chart3.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

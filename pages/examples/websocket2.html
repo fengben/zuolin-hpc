@@ -1,0 +1,67 @@
+<html>
+  <head>
+        <Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+	<script type="text/javascript" src="/Scripts/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/Scripts/StationJSLib.js"></script>
+	<script type="text/javascript" src="/Scripts/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery.alert.js"></script>
+    <script>
+        function initialize_websocket(server_order){
+          var socket_up;
+          var started;
+          var valid=true;
+          var homea = homeAddress(false);
+          var urlstr = "ws://"+homea+"ws"+server_order+"/template?script=examples/websocket/websocket2.template&num=0";
+          if (typeof MozWebSocket != "undefined") {
+           socket_up = new MozWebSocket(urlstr);
+          }
+          else {
+            socket_up = new WebSocket(urlstr);
+          }
+	  socket_up.onopen = function(evt) {
+        	started=true;
+       	        $("#show")[0].innerHTML = "showing...";
+                socket_up.send("send normal");
+       	 };
+	 socket_up.onclose = function(evt) {
+  	      if(started)
+        	    return;
+       	   if(!valid && evt.code==1006){  // can not connect
+       	     alert("Web socket connection failed!");
+       	   }
+   	 };
+
+      socket_up.onmessage = function(msg) {
+        $("#show")[0].innerHTML = msg.data;
+        if(msg.data=="12")
+            socket_up.send("terminate");
+        else{
+            var sendmsg=function(){
+                socket_up.send("send normal");
+            };
+            setTimeout(sendmsg,1000);
+        }
+    };
+    socket_up.onerror = function(evt) {
+        //alert(evt.data);
+        valid=false;
+    };
+}
+
+    $(function(){
+        var processResult=function(obj){
+            initialize_websocket(obj[0]);
+        };
+        remoteService("serverOrder.spe",processResult);
+    });
+
+    </script>
+  </head>
+  <body>
+    这个例子演示了怎样用template编写websocket服务<br>
+    下面的数字会每隔一秒钟增加1，直到12结束<br>
+    本例子与上一个例子不同的地方是：每次通信都是由客户端主动发起；最后由服务端决定何时关闭连接<br>
+    <div id="show"></div>
+  </body>
+</html>
